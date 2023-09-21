@@ -3,13 +3,13 @@ echo "----------------------------------------------"
 echo "Actualizando respositorio Diseño de Interfaces"
 echo "----------------------------------------------"
 
-echo "Paso 1: Acutalizar carpeta local"
+echo "Paso 1: Acutalizar carpeta local."
 git pull
 
-echo "Paso 2: Añadimos archivos locales"
+echo "Paso 2: Añadimos archivos locales."
 git add .
 
-echo "Paso 3: Descripcion de la subida"
+echo "Paso 3: Descripcion de la subida."
 read -p "Escribe el mensaje de subida: " mensaje
 git commit -m "$mensaje" .
 
