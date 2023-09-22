@@ -1,0 +1,18 @@
+h1{
+    position: relative;
+    left: 15%;
+}
+
+.sticky-menu{
+    position: sticky;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+.footer{
+    position: fixed;
+    bottom: 10px;
+    align-items: inherit;
+    background-color: lightgrey;
+    align-items: center;
+}

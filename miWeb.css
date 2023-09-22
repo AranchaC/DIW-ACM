@@ -1,7 +1,16 @@
+body {
+    margin: 25px;
 
+}
 
 header {
-    width: 90%;
+    
     background-color: blueviolet;
     align-items: center;
+
+}
+
+nav {
+    position: sticky;
+    top: 5px;
 }
