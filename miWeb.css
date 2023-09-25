@@ -1,26 +1,20 @@
 body {
+   /* margin: 0;*/
     margin: 70px;
-
 }
 
 header {
-
-    
+    position: relative;  
     background-color: blueviolet;
-    align-items: center;
-    background-image: url("fotoheader2.png");
-    background-size: 50% auto;
-    background-repeat: no-repeat;
-    height: 400px;
-
+    overflow: hidden;
 }
 
 .nombre {
-    position: relative;
-    right: 100%;
     background-color: cyan;
+    position: relative;
     width: 50%;
-    
+    left: 50%;
+    display: inline-block;
 }
 .nombre p{
     padding-left: 10px;
@@ -33,17 +27,13 @@ header {
 }
 
 .foto {
-    float: left;
     background-color: blue;
     background-image: url("fotoheader2.png");
-    width: 50%;
-    max-width: 100%;
-
-    min-height: 150px;
-    max-height: 100%;
     background-size: cover;
-    background-position: bottom;
-
+    height: 100%;
+    position: absolute;
+    width: 50%;
+    display: inline-block;
     /*background-position: center;*/
 
 }
