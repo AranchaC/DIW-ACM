@@ -1,6 +1,6 @@
 body {
-   /* margin: 0;*/
-    margin: 70px;
+    margin: 0;
+
 }
 
 header {
@@ -25,7 +25,7 @@ header {
     font-weight: bold;
     /*font-size: larger;*/
 }
-
+/*
 .foto {
     background-color: blue;
     background-image: url("fotoheader2.png");
@@ -34,12 +34,24 @@ header {
     position: absolute;
     width: 50%;
     display: inline-block;
-    /*background-position: center;*/
 
+    right: 50%;
+}
+*/
+
+img{
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-
-footer{
+footer{  
+    position: fixed;
+    bottom: 5px;
+    display: block;
+    width: 100%;
     text-align: center;
     background-color: rgb(192, 192, 192);
     border: 3px solid black;
@@ -50,21 +62,20 @@ footer{
 
 .nav {
     position: sticky;
-    top: 5px;
+    top: 10px;
     text-align: center;
     background-color: rgb(192, 192, 192);
     border: 3px solid black;
     padding: 5px 20px;
     margin: 5px auto 5px;
 
-    justify-content: space-between;
+
 }
 
 .nav a{
     display: inline-block;
-    margin: auto 5px;
-    padding: 5px 70px ;
-
+    padding: 10px;
+    width: 170px;
 }
 
 section {
@@ -72,5 +83,10 @@ section {
     margin: 5px auto 5px;
 
     
+}
+
+.contacto {
+    background-color: fuchsia;
+    height: 1000px;
 }
 
