@@ -94,11 +94,45 @@ section {
 
 .contacto {
     height: 300px;
- 
+    position: relative;
 }
 
-.contacto * {
-    float: left;
-    margin: 10px;
+.contacto textarea {
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    left: 40px;
+    width: 35%;
+}
+
+.contacto input {
+    position: absolute;
+    left: 40%;
+    padding: 10px;
+}
+
+.contacto input[name=nombre]{
+    top: 40px;
+    width: 35%;
+}
+.contacto input[name=email]{
+    top: 100px;
+    width: 35%;
+}
+
+.contacto input[name=enviar]{
+    top: 160px;
+    width: 15%;
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 8px;
+    font-weight: bold;
+}
+
+.contacto img{
+    position: absolute;
+    vertical-align: middle;
+    width: 12%;
+    right: 20px;
 }
 
