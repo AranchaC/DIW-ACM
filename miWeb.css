@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    background: linear-gradient(rgb(255, 58, 248) 15%, rgb(31, 210, 255), rgb(226, 10, 255));
+    background: linear-gradient(rgb(255, 58, 248) 10%, rgb(31, 210, 255), rgb(137, 10, 255));
 
 }
 
@@ -16,7 +16,9 @@ header {
 }
 
 .nom{
-    background-color: chocolate;
+    background-image: url("fotos/estrellas.jpg");
+    background-size: cover;
+    color: white;
     float: left;
     width: 50%;
     height: 250px;
@@ -35,6 +37,7 @@ header {
 footer{  
     position: fixed;
     bottom: 5px;
+    
     display: block;
     width: 100%;
     text-align: center;
@@ -65,18 +68,22 @@ footer img {
 
 section {
     border-top: 4px solid black;
-    margin: 5px auto 5px;
+    margin: 5px 0px;
+ 
     
     
 }
 
 .inicio{
-    background-image: url("fotoinicio.png");
+    width: 100%;
+
+    background-image: url("fotos/fotoinicio.png"); 
+
     
 }
 
 .contacto {
     
-    height: 1000px;
+ height: 500px;
 }
 
