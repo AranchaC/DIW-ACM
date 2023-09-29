@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    background: linear-gradient(rgb(255, 58, 248) 10%, rgb(31, 210, 255), rgb(137, 10, 255));
+    background: linear-gradient(rgb(255, 117, 250) 10%, rgb(31, 210, 255), rgb(137, 10, 255));
 
 }
 
@@ -22,7 +22,19 @@ header {
     float: left;
     width: 50%;
     height: 250px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+    
+    padding: 8px;
 }
+
+h1{
+    text-shadow: 7px 4px 5px rgb(0, 0, 0), 7px 4px 5px rgb(255, 255, 255);
+}
+
+
+
 .nombre {
     background-color: cyan;
     height: 250px;;
@@ -68,22 +80,25 @@ footer img {
 
 section {
     border-top: 4px solid black;
-    margin: 5px 0px;
- 
-    
+    padding: 10px 10px;
+
     
 }
 
 .inicio{
     width: 100%;
-
     background-image: url("fotos/fotoinicio.png"); 
 
     
 }
 
 .contacto {
-    
- height: 500px;
+    height: 300px;
+ 
+}
+
+.contacto * {
+    float: left;
+    margin: 10px;
 }
 
