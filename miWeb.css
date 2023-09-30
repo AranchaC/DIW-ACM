@@ -15,7 +15,7 @@ header {
     overflow: auto;
 }
 
-.nom{
+.headerIzq{
     background-image: url("fotos/estrellas.jpg");
     background-size: cover;
     color: white;
@@ -24,8 +24,7 @@ header {
     height: 250px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    text-align: center;
-    
+    text-align: center;  
     padding: 8px;
 }
 
@@ -34,17 +33,19 @@ h1{
 }
 
 
-
-.nombre {
-    background-color: cyan;
+.headerDer {
+    background-image: url("fotos/estrellas.jpg");
+    background-size: cover;
+    color: white;
     height: 250px;;
     width: 50%;
     float: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center; 
+    padding: 20px;
+    border-left: 4px ;
 }
-.nombre p{
-    padding-left: 10px;
-}
-
 
 footer{  
     position: fixed;
@@ -95,7 +96,12 @@ section {
 .contacto {
     height: 300px;
     position: relative;
+    /* display: block; */
 }
+
+/* .contacto * {
+    display: inline-block;
+} */
 
 .contacto textarea {
     position: absolute;
@@ -109,6 +115,7 @@ section {
     position: absolute;
     left: 40%;
     padding: 10px;
+    margin-left: 30px;
 }
 
 .contacto input[name=nombre]{
