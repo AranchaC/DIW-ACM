@@ -44,7 +44,8 @@ h1{
     font-weight: bold;
     text-align: center; 
     padding: 20px;
-    border-left: 4px ;
+    border-left: 15px dotted white ;
+    /* dashed, double, groove */
 }
 
 footer{  
@@ -82,19 +83,18 @@ footer img {
 section {
     border-top: 4px solid black;
     padding: 10px 10px;
-
-    
+    height: 300px;
+    margin: 10px 0;
 }
 
 .inicio{
     width: 100%;
     background-image: url("fotos/fotoinicio.png"); 
-
-    
+    height: 300px;
+    background-size: cover;
 }
 
 .contacto {
-    height: 300px;
     position: relative;
     /* display: block; */
 }
@@ -141,5 +141,6 @@ section {
     vertical-align: middle;
     width: 12%;
     right: 20px;
+
 }
 
