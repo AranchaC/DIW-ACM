@@ -75,13 +75,16 @@ footer img {
     padding: 0px 20px;
     margin: 10px 0px;
     z-index: 3;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
-        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .menu a{
     display: inline-block;
     padding: 10px 4%;
+}
+
+a:hover{
+    font-weight: bold;
 }
 
 section {
@@ -100,6 +103,7 @@ section h2 {
     top: -36px;
     color: white;
     text-shadow: 4px 4px 4px  white;
+    font-weight: bold;
     -webkit-text-stroke: 1.5px black;
     font-size: x-large;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
@@ -137,6 +141,12 @@ section h2 {
     border-radius: 10% / 50%;
 }
 
+/* ***** AFICIONES **** */
+
+.icons1, .icons2{
+    text-align: center;
+}
+
 /* ****** CONTACTO ******** */
 
 
@@ -171,6 +181,11 @@ section h2 {
     color: white;
     box-shadow: 5px 5px 8px;
     font-weight: bold;
+}
+
+input[name=enviar]:hover{
+    background-color: white;
+    color: black;
 }
 
 .contacto img{
