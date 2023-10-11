@@ -1,0 +1,21 @@
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--color-3);   
+  }
+
+ $redes-sociales: facebook twitter linkedin;
+
+.redes-sociales {
+    @each $red in $redes-sociales {
+        .icono-#{$red} { 
+            background-image: url("../img/#{$red}.png");
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: inline-block;
+            
+        }
+    }
+}

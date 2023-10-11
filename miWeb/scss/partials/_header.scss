@@ -2,14 +2,13 @@
 /* **** HEADER **** */
 header {
     position: relative;  
-    background-color: blueviolet;
     overflow: auto;
 }
 
 .headerIzq{
     background-image: url("/miWeb/fotos/estrellas.jpg");
     background-size: cover;
-    color: white;
+    color: $color-1-claro;
     float: left;
     width: 50%;
     height: 250px;
@@ -20,13 +19,13 @@ header {
 }
 
 h1{
-    text-shadow: 7px 4px 5px rgb(0, 0, 0), 7px 4px 5px rgb(255, 255, 255);
+    text-shadow: 7px 4px 5px var(--color-2), 7px 4px 5px var(--color-1);
 }
 
 .headerDer {
     background-image: url("/miWeb/fotos/estrellas.jpg");
     background-size: cover;
-    color: white;
+    color: var(--color-1);
     height: 250px;;
     width: 50%;
     float: right;
@@ -34,6 +33,6 @@ h1{
     font-weight: bold;
     text-align: center; 
     padding: 20px;
-    border-left: 15px dotted white ;
+    border-left: 15px dotted var(--color-1) ;
     /* dashed, double, groove */
 }

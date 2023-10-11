@@ -1,0 +1,49 @@
+.post {
+  margin-top: 2rem;
+  background-color: var(--color-2);
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.post header {
+  margin-bottom: 2rem;
+}
+
+.post header img {
+  max-width: 100px;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.post header h2 {
+  margin: 0;
+}
+
+.post header h2+p {
+  margin: 0.3em 0;
+  color: var(--color-5);
+}
+
+.post h3 {
+  background-color: var(--color-3);
+  padding: 1rem;
+  color: var(--color-2);
+  border-radius: 4px;
+}
+
+p.en-construccion {
+
+  text-align: center;
+
+  img {
+    width: 50%;
+    @if $debug == false {
+      display: none;
+    }@else{
+      display: inline;
+
+    }
+
+  }
+}

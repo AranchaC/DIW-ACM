@@ -1,0 +1,54 @@
+$color-1-claro: #efefef;
+$color-2-claro: #fff;
+$color-3-claro: #484848;
+$color-4-claro: #6E2C00;
+$color-5-claro: #828282;
+
+$colores-oscuros : (
+  #212F3C,
+  #34495E,
+  #CCD1D1,
+  #F9E79F,
+  #fff
+);
+
+:root {
+  .tema-claro{
+  --color-1:  #{$color-1-claro};
+  --color-2:  #{$color-2-claro};
+  --color-3:  #{$color-3-claro};
+  --color-4:  #{$color-4-claro};
+  --color-5:  #{$color-5-claro};
+  }
+  .tema-oscuro{
+    --color-1:  #{nth($colores-oscuros,1)};
+    --color-2:  #{nth($colores-oscuros,2)};
+    --color-3:  #{nth($colores-oscuros,3)};
+    --color-4:  #{nth($colores-oscuros,4)};
+    --color-5:  #{nth($colores-oscuros,5)};
+  }
+} 
+
+/* MODO DEBUG*/
+// Ver IF, en el partial principal.....
+$debug:false;
+
+
+
+@import "./partials/_boton.scss";
+@import "./partials/_menu.scss";
+@import "./partials/_principal.scss";
+@import "./partials/_footer.scss";
+
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  padding: 1rem;
+  background-color: var(--color-1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
