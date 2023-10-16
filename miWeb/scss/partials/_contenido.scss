@@ -27,21 +27,16 @@ section h2 {
 /* ****** INICIO ****** */
 
 .inicio{
-    width: 100%;
-    /* background-image: url("fotos/fotoinicio.png"); 
-    opacity: 0.5; */
     height: 300px;
     background-size: cover;
     text-align: center;
-    display: table;
+
     display: block;
 }
 
 .h3izq{
     float: left;
     width: 40%;
-    display: table-cell;
-    vertical-align: middle;
 }
 
 .h3der{
@@ -78,6 +73,7 @@ section h2 {
     left: 40%;
     padding: 8px;
     margin-left: 30px;
+
 }
 
 .contacto input[name=nombre]{
