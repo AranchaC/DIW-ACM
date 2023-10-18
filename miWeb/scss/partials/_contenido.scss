@@ -5,22 +5,20 @@ section {
     padding: 0px 10px;
     height: 300px;
     margin: 10px 0;
-}
-
-section {
     position: relative;
-}
-section h2 {
-    position: absolute;
-    left: 45%;
-    top: -36px;
-    color: var(--color-1);
-    text-shadow: 4px 4px 4px  rgb(251, 6, 251);
-    font-weight: bold;
-    -webkit-text-stroke: 2px var(--color-2);
-    font-size: x-large;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
-            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    & h2 {
+        position: absolute;
+        left: 45%;
+        top: -36px;
+        color: var(--color-1);
+        text-shadow: 4px 4px 4px  rgb(251, 6, 251);
+        font-weight: bold;
+        -webkit-text-stroke: 2px var(--color-2);
+        font-size: x-large;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 }
 
 
@@ -30,8 +28,14 @@ section h2 {
     height: 300px;
     background-size: cover;
     text-align: center;
-
     display: block;
+    color: var(--color-2);
+
+    & img{
+        float: left;
+        width: 20%;
+        border-radius: 10% / 50%;
+    }  
 }
 
 .h3izq{
@@ -45,65 +49,22 @@ section h2 {
     padding: 10px;
 }
 
-.inicio img{
-    float: left;
-    width: 20%;
-    border-radius: 10% / 50%;
-}
+
 
 /* ***** AFICIONES **** */
 
-.icons1, .icons2{
+.aficiones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
-/* ****** CONTACTO ******** */
-
-
-.contacto textarea {
-    position: absolute;
-    top: 80px;
-    bottom: 40px;
-    left: 40px;
-    width: 35%;
-}
-
-.contacto input {
-    position: absolute;
-    left: 40%;
-    padding: 8px;
-    margin-left: 30px;
-
-}
-
-.contacto input[name=nombre]{
-    top: 80px;
-    width: 35%;
-}
-.contacto input[name=email]{
-    top: 120px;
-    width: 35%;
-}
-
-.contacto input[name=enviar]{
-    top: 180px;
-    width: 15%;
-    background-color: var(--color-2);
-    color: var(--color-1);
-    box-shadow: 5px 5px 8px;
-    font-weight: bold;
-}
-
-input[name=enviar]:hover{
-    background-color: var(--color-1);
-    color: var(--color-2);
-}
-
-.contacto img{
-    position: absolute;
-    vertical-align: middle;
-    top: 50px;
-    width: 10%;
-    right: 20px;
-
+.icons {
+    & img {
+        height: map-get($tam-icons-height, 'grande' );
+        width: map-get($tam-icons-width, 'grande' );
+        margin: 15px;
+    }
 }

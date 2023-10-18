@@ -1,3 +1,18 @@
+// uiverse.io
+// uicolors
+
+$tam-icons-width : (
+ 'pequenio':25px, 
+ 'medio':60px,
+ 'grande':75px
+);
+
+$tam-icons-height : (
+ 'pequenio':25px, 
+ 'medio':60px,
+ 'grande':75px
+);
+
 $color-1-claro: white;
 $color-2-claro: black;
 $color-3-claro: rgb(192, 192, 192);
@@ -5,11 +20,11 @@ $color-4-claro: rgb(180, 240, 255);
 $color-5-claro: rgb(214, 169, 255);
 
 $colores-oscuros : (
-    #CCD1D1,
-    rgb(84, 98, 151),   
-    gray,
-    #212F3C,
-    #34495E,
+    rgb(84, 98, 151), 
+    black,
+    #799bbe,
+    rgb(84, 98, 151), 
+    #5b6a78,
 
 );
 
@@ -50,6 +65,7 @@ body{
 @import "partials/footer";
 
 @import "partials/contenido";
+@import "partials/contacto";
 
 @import "partials/boton";
 

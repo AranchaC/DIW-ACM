@@ -1,0 +1,50 @@
+/* ****** CONTACTO ******** */
+
+
+.contacto textarea {
+    position: absolute;
+    top: 80px;
+    bottom: 40px;
+    left: 40px;
+    width: 35%;
+}
+
+.contacto input {
+    position: absolute;
+    left: 40%;
+    padding: 8px;
+    margin-left: 30px;
+
+}
+
+.contacto input[name=nombre]{
+    top: 80px;
+    width: 35%;
+}
+.contacto input[name=email]{
+    top: 120px;
+    width: 35%;
+}
+
+.contacto input[name=enviar]{
+    top: 180px;
+    width: 15%;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    box-shadow: 5px 5px 8px;
+    font-weight: bold;
+}
+
+input[name=enviar]:hover{
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+.contacto img{
+    position: absolute;
+    vertical-align: middle;
+    top: 50px;
+    width: 10%;
+    right: 20px;
+
+}
