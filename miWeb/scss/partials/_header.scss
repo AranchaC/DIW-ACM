@@ -3,36 +3,35 @@
 header {
     position: relative;  
     overflow: auto;
-}
 
-.headerIzq{
-    background-image: url("/fotos/estrellas.jpg");
-    background-size: cover;
-    color: white;
-    float: left;
-    width: 50%;
-    height: 250px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    text-align: center;  
-    padding: 8px;
-}
+    .headerIzq{
+        background-image: url("../fotos/estrellas.jpg");
+        background-size: cover;
+        color: white;
+        float: left;
+        width: 50%;
+        height: 250px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        text-align: center;  
+        padding: 8px;
+        h1{
+            text-shadow: 7px 4px 5px var(--color-2), 7px 4px 5px var(--color-1);
+        }
+    }
 
-h1{
-    text-shadow: 7px 4px 5px var(--color-2), 7px 4px 5px var(--color-1);
-}
-
-.headerDer {
-    background-image: url("/fotos/estrellas.jpg");
-    background-size: cover;
-    color: white;
-    height: 250px;;
-    width: 50%;
-    float: right;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    text-align: center; 
-    padding: 20px;
-    border-left: 15px dotted var(--color-1) ;
-    /* dashed, double, groove */
+    .headerDer {
+        background-image: url("../fotos/estrellas.jpg");
+        background-size: cover;
+        color: white;
+        height: 250px;;
+        width: 50%;
+        float: right;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        text-align: center; 
+        padding: 20px;
+        border-left: 15px dotted var(--color-1) ;
+        /* dashed, double, groove */
+    }
 }
