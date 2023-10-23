@@ -1,0 +1,22 @@
+.color-red {
+  background-color: red;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-green {
+  background-color: green;
+}
+
+
+
+/*# sourceMappingURL=ejEachs.scss.map */
+
+$iconos: facebook,twitter,instagram;
+@each $icono in $iconos {
+    .icon-#{$icono}{
+        background-image: url('./imagenes/#{$icono}.png');
+    }
+}

@@ -1,0 +1,26 @@
+.color-red {
+  background-color: red;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-green {
+  background-color: green;
+}
+
+
+.icon-facebook {
+  background-image: url("./imagenes/facebook.png");
+}
+
+.icon-twitter {
+  background-image: url("./imagenes/twitter.png");
+}
+
+.icon-instagram {
+  background-image: url("./imagenes/instagram.png");
+}
+
+/*# sourceMappingURL=ejEachs.css.map */
