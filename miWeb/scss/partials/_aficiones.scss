@@ -1,0 +1,17 @@
+/* ***** AFICIONES **** */
+
+.aficiones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icons {
+    & img {
+        height: map-get($tam-icons-height, 'grande' );
+        width: map-get($tam-icons-width, 'grande' );
+        margin: 15px 15px;
+    }
+}

@@ -24,8 +24,8 @@ $colores-oscuros : (
     rgb(84, 98, 151), 
     black,
     #799bbe,
-    rgb(84, 98, 151), 
-    #5b6a78,
+    #57729E, 
+    #6283AE,
 
 );
 
@@ -43,8 +43,12 @@ $colores-oscuros : (
         --color-3:  #{nth($colores-oscuros,3)};
         --color-4:  #{nth($colores-oscuros,4)};
         --color-5:  #{nth($colores-oscuros,5)};
-      }
+    }
 }
+
+/* MODO DEBUG*/
+// Ver IF, en el partial principal.....
+$debug:false;
 
 * {
     -webkit-box-sizing: border-box;
@@ -66,6 +70,7 @@ body{
 @import "partials/footer";
 
 @import "partials/contenido";
+@import "partials/aficiones";
 @import "partials/contacto";
 
 @import "partials/boton";

@@ -1,7 +1,7 @@
 /* ****** MAIN ****** */
 
 section {
-    border-top: 4px solid var(--color-2);
+    border-top: 4px solid black;
     padding: 0px 10px;
     height: 300px;
     margin: 10px 0;
@@ -21,6 +21,17 @@ section {
     }
 }
 
+p.en-construccion {
+    text-align: center; 
+    img {
+      width: 50%;
+      @if $debug == false {
+        display: none;
+      }@else{
+        display: inline; 
+      } 
+    }
+  }
 
 /* ****** INICIO ****** */
 
@@ -52,20 +63,3 @@ section {
 
 
 
-/* ***** AFICIONES **** */
-
-.aficiones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.icons {
-    & img {
-        height: map-get($tam-icons-height, 'grande' );
-        width: map-get($tam-icons-width, 'grande' );
-        margin: 15px;
-    }
-}

@@ -1,5 +1,21 @@
 /* ***** FOOTER ***** */
 
+$redes: linkedin git gmail twitter facebook instagram;
+
+.redes {
+    @each $red in $redes {
+        .icono-#{$red} {
+            background-image: url("../iconosFooter/#{$red}.svg");
+            display: inline-block;
+            padding:  0px 5%;
+            height: 25px;
+            width: 25px;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+}
+
 footer{  
     position: fixed;
     bottom: 5px;
@@ -10,11 +26,5 @@ footer{
     background-color: var(--color-3);
     border: 3px solid var(--color-2);
     padding: 5px;
-    img {
-        display: inline-block;
-        padding:  0px 5%;
-        height: map-get($tam-icons-height, 'pequenio' );
-
-}
     
 }
