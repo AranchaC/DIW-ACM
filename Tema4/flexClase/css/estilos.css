@@ -1,0 +1,29 @@
+body {
+    background: #223;
+}
+
+.contenedor {
+    background-color: grey;
+    min-height: 600px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+    flex-wrap: wrap;
+    /* row-gap: 10px;
+    column-gap: 10px; */
+    gap: 10px;
+    padding: 10px;
+}
+
+.items {
+    width: 250px;
+    height: 250px;
+    background-color: pink;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 1. en el padre poner display: flex */
