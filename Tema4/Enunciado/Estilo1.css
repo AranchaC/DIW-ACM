@@ -1,0 +1,39 @@
+header, nav, article, aside, footer {
+    border: solid red;
+    border-radius: 20px;
+}
+article, aside {
+   height: 400px;
+}
+header {
+    background-color: dimgray;
+}
+nav {
+    background-color: aqua;
+}
+.fila {
+    display: flex;
+    justify-content: space-between;
+}
+.articulo1 {
+    background-color: aliceblue;
+    flex-grow: 2;   
+
+    /* order: 2; */
+}
+.articulo2 {
+    background-color: gold;  
+    flex-grow: 2;  
+
+    /* order: 3;    */
+}
+aside {
+    background-color: dimgrey;  
+    flex-grow: 1; 
+    flex-shrink: 1;
+    flex-basis: 700px;
+    /* order: 1;*/
+}
+footer {
+    background-color: blueviolet;
+}
