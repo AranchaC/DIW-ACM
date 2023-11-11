@@ -2,24 +2,28 @@
 // uicolors
 // sass --watch miWeb/scss/estilos.scss miWeb/css/estilos.css
 
+//creo mapa para el ancho de iconos
 $tam-icons-width : (
  'pequenio':25px, 
- 'medio':60px,
- 'grande':75px
+ 'medio':75px,
+ 'grande':180px
 );
 
+//creo mapa para el alto de iconos
 $tam-icons-height : (
  'pequenio':25px, 
- 'medio':60px,
- 'grande':75px
+ 'medio':75px,
+ 'grande':180px
 );
 
+//variables para los colores:
 $color-1-claro: white;
 $color-2-claro: black;
 $color-3-claro: rgb(192, 192, 192);
 $color-4-claro: rgb(180, 240, 255);
 $color-5-claro: rgb(214, 169, 255);
 
+//lista para los colores modo oscuro
 $colores-oscuros : (
     rgb(84, 98, 151), 
     black,
@@ -29,6 +33,8 @@ $colores-oscuros : (
 
 );
 
+//Variables de colores e interpolación en :root para
+//establecer variables personalizadas.
 :root {
     .tema-claro {
         --color-1: #{$color-1-claro};
@@ -47,7 +53,7 @@ $colores-oscuros : (
 }
 
 /* MODO DEBUG*/
-// Ver IF, en el partial principal.....
+// Ver IF, en el partial _main.....
 $debug:false;
 
 * {
@@ -64,16 +70,15 @@ body{
 @import "partials/header";
 
 @import "partials/menu";
-
 @import "partials/boton";
 
-@import "partials/footer";
-
-@import "partials/contenido";
+@import "partials/main";
 @import "partials/aficiones";
 @import "partials/contacto";
 
-@import "partials/boton";
+@import "partials/footer";
+
+
 
 
 
