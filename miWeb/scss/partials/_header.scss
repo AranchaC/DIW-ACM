@@ -14,10 +14,10 @@ header {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-weight: bold;
         text-align: center;  
-        padding: 8px;
+        align-items: center;
         h1{
             text-shadow: 7px 4px 5px var(--color-2), 7px 4px 5px var(--color-1);
-            padding-top: 7%;
+            padding-top: 11%;
         }
     }
 
@@ -31,7 +31,7 @@ header {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-weight: bold;
         text-align: center; 
-        padding: 40px;
+        padding-top: 3%;
         border-left: 15px dotted var(--color-1) ;
         /* dashed, double, groove */
     }
