@@ -12,7 +12,7 @@
         <script src="./js/javascript.js" defer></script>
     </head>
 
-    <body class="tema-claro">
+    <body class="tema-claro" id="inicio">
         <header>
             <!--<div class="foto"></div>-->
             <!-- <img src="fotoheader2.png" class="foto"> -->
@@ -27,11 +27,11 @@
         </header>
 
         <nav class="menu">
-			<a>INICIO</a>
-			<a>EXPERIENCIA</a>
-			<a>FORMACIÓN</a>
-            <a>AFICIONES</a>
-            <a>CONTACTO</a>
+			<a href="#inicio">INICIO</a>
+			<a href="#experiencia">EXPERIENCIA</a>
+			<a href="#formacion">FORMACIÓN</a>
+            <a href="#aficiones">AFICIONES</a>
+            <a href="#contacto">CONTACTO</a>
             <label class="switch-5">
                 <input type="checkbox" name="modo" id="toggleTheme" />
                 <span class="slider-5"></span>
@@ -52,16 +52,46 @@
                 <h3 class="h3der">NOMBRE: Arancha Chicharro. <br>FECHA NAC.: 20/10/1991
                     <br>RESIDENCIA: Madrid, ESPAÑA.<br>OTRAS RESIDENCIAS: Boston, EEUU.
                 </h3>
+                <span id="experiencia"></span>
             </article>
 
             <article>
 
-                <section class="experiencia">
+                <section class="experiencia" >
                     <h2>EXPERIENCIA</h2>
+                    
                 </section>
-
+                <span id="formacion"></span>
                 <section class="formacion">
-                    <h2>FORMACIÓN</h2>
+                    <h2>FORMACIÓN</h2> 
+                   
+                        <div class="punto punto-1"></div>
+                        <div class="punto punto-2"></div>
+                        <div class="punto punto-3"></div>
+                        <div class="punto punto-4"></div>
+                        <div class="punto punto-5"></div>
+                    
+                    <div class="item item-1">
+                        <div class="fecha-formacion">2008</div>
+                        <p>CFGM <br> Gestión <br> Administrativa</p>
+                    </div>
+                    <div class="item item-2">
+                        <p>CGFS <br>Agencias de Viajes y <br>Gestión de Eventos</p>
+                        <div class="fecha-formacion">2012</div>
+                    </div>
+                    <div class="item item-3">
+                        <div class="fecha-formacion">2013</div>
+                        <p>Agente de Reservas <br>AMADEUS</p>
+                    </div>
+                    <div class="item item-4">
+                        <p>Facturación de <br>pasajeros y embarque</p>
+                        <div class="fecha-formacion">2014</div>
+                    </div>
+                    <div class="item item-5">
+                        <div class="fecha-formacion">2024</div>
+                        <p>CFGS <br> Desarrollo <br>Aplicaciones Web</p>
+                    </div>
+                    <span id="aficiones"></span>
                 </section>
 
                 <section class="aficiones">
@@ -81,6 +111,7 @@
                         <img src="iconosBody/casa.png" alt="">
                         
                     </div>
+                    <span id="contacto"></span>
                 </section>
 
                 <section class="contacto">

@@ -79,6 +79,8 @@ header .headerDer {
   margin: 10px 0;
   position: relative;
   text-decoration: none;
+  cursor: pointer;
+  color: var(--color-2);
 }
 .menu a:hover {
   font-weight: bold;
@@ -101,6 +103,7 @@ header .headerDer {
   top: auto;
   bottom: 0;
   transform-origin: right;
+  background: linear-gradient(to left, #b47dcd, #e878a2, #eb85ab);
 }
 .menu a:hover::before, .menu a:hover::after {
   transform: scaleX(1);
@@ -170,7 +173,7 @@ section {
 }
 section h2 {
   position: absolute;
-  left: 42%;
+  left: 43%;
   top: -47px;
   color: var(--color-1);
   text-shadow: 4px 4px 4px rgb(251, 6, 251);
@@ -221,6 +224,99 @@ p.en-construccion img {
   margin: 15px 15px;
 }
 
+.formacion {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.formacion:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10.5%; /* Ajusta la posición inicial al centro del primer .formacion-item */
+  height: 2px;
+  width: 79%; /* Ajusta el ancho según sea necesario */
+  background-color: #333;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.formacion {
+  position: relative;
+}
+
+.punto {
+  position: absolute;
+  top: 48.5%;
+  width: 10px;
+  height: 10px;
+  background-color: purple;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.punto-1 {
+  left: 10%; /* Calcula el 0.5% para centrar el punto */
+}
+
+.punto-2 {
+  left: 30%;
+}
+
+.punto-3 {
+  left: 49.5%;
+}
+
+.punto-4 {
+  left: 69.5%;
+}
+
+.punto-5 {
+  left: 89%;
+}
+
+.item {
+  position: relative;
+  text-align: center;
+  width: 20%; /* Ajusta según sea necesario */
+  margin: 0 auto;
+}
+
+.fecha-formacion {
+  -webkit-text-stroke: 1% var(--color-2);
+  font-weight: bold;
+  color: fuchsia;
+  font-size: 2%; /* Ajusta según sea necesario */
+}
+
+.item-1 {
+  padding-top: 40px;
+}
+
+.item-2 {
+  padding-bottom: 40px;
+}
+
+.item-3 {
+  padding-top: 20px;
+}
+
+.item-4 {
+  padding-bottom: 20px;
+}
+
+.item-5 {
+  padding-top: 40px;
+}
+
+.fecha-formacion {
+  -webkit-text-stroke: 1px var(--color-2);
+  font-weight: bold;
+  color: fuchsia;
+  font-size: 180%;
+}
+
 /* ****** CONTACTO ******** */
 .contacto textarea {
   position: absolute;
@@ -234,6 +330,10 @@ p.en-construccion img {
   left: 40%;
   padding: 8px;
   margin-left: 30px;
+}
+.contacto input:focus::placeholder {
+  font-weight: bold;
+  font-style: italic;
 }
 .contacto input[name=nombre] {
   top: 80px;

@@ -10,16 +10,22 @@
     margin: 10px 0px;
     z-index: 3;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
     a{
         display: inline-block;
         padding: 0px 4%;
         margin: 10px 0;
         position: relative;
         text-decoration: none;
+        cursor: pointer;
+        color: var(--color-2);
+
+        &:hover{
+            font-weight: bold;    
+        }
+        
     }
-    a:hover{
-        font-weight: bold;    
-    }
+    
     a::before, a::after {
         content: '';
         position: absolute;     
@@ -38,6 +44,7 @@
         top: auto;
         bottom: 0;
         transform-origin: right;
+        background: linear-gradient(to left, #b47dcd, #e878a2, #eb85ab);
     }
     a:hover::before, a:hover::after {
         transform: scaleX(1);
