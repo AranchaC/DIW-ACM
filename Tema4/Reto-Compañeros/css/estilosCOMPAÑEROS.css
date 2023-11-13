@@ -1,0 +1,61 @@
+
+.contenedor-menu{
+    background-color: blueviolet;
+    position: sticky;
+    padding: 10px;
+
+}
+.items-m {
+    background-color: yellowgreen;
+    padding: 3%;
+    border-radius: 100%;
+}
+
+.contenedor-central {
+    background-color: skyblue;
+    min-height: 500px;
+    margin: 10px 0px ;
+    padding: 40px;
+
+}
+
+.hijo-central1{   
+
+}
+
+.hijo-central2{   
+
+}
+
+.items-c {
+    background-color: cyan;
+    padding: 70px;
+}
+
+
+.contenedor-footer{
+
+    height: 100px;
+    padding: 10px;
+    background-color: blueviolet;
+}
+
+.items-f {
+    background-color: black;
+    color: aqua;
+    padding: 20px;
+
+}
+
+.item-f-1{
+
+  }
+  .item-f-2{
+
+  }
+  .item-f-3{
+
+  }
+  .item-f-4{
+
+  }

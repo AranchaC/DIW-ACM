@@ -1,0 +1,121 @@
+body{
+    color: white;
+  
+
+ 
+    }
+    .contenedor-menu{
+        width: 200px;
+
+
+    }
+    .item-m-1{
+        background-color: salmon;
+        height: 60px;
+        width: 60px;
+
+    }
+    .item-m-2{
+        background-color: salmon;
+        height: 60px;
+        width: 60px;
+
+
+    }
+    .item-m-3{
+        background-color: #d6ae01;
+        width: 60px;
+    }
+    .item-m-35{
+
+    }
+    .item-m-4{
+
+    }
+    .item-m-45{
+        background-color: black;
+        width: 150px;
+        height: 10px;
+    }
+    
+    .contenedor-central{ 
+        display: flex;  
+        align-items: center;     
+
+    }
+    .item-c-1{
+        background-color: red;
+        width: 40px;
+        height: 200px;
+        order: 1;
+
+    }
+    .item-c-2{
+        background-color: red;
+        width: 40px;
+        height: 200px;
+        order: 3;
+    }
+    .item-c-3{
+        background-color: salmon;
+        width: 40px;
+        height: 200px;
+        order: 0;
+    }
+    .item-c-35{
+        background-color: salmon;
+        width: 60px;
+        height: 200px;
+        order: 1;
+    }
+    .item-c-4{
+        background-color: salmon;
+        width: 40px;
+        height: 200px;
+        order: 4;
+    }
+    
+    .contenedor-footer{
+        display: flex;
+        width: 160px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .item-f-1 {
+        background-color: blue;
+        width: 60px;
+        height: 100px;
+        order: 1;
+    }
+    .item-f-2{
+        background-color: blue;
+        width: 60px;
+        height: 100px;
+        order: 2;
+    }
+    .item-f-3 {
+        background-color: #a88900;
+        width: 80px;
+        height: 20px;
+        order: 5;
+    }
+
+    .item-f-4{
+        background-color: #a88900;
+        width: 80px;
+        height: 20px;
+        order: 6;
+    }
+    .item-f-5 {
+        background-color: salmon;
+        width: 60px;
+        height: 100px;
+        order: 3;
+    }
+
+    .item-f-6{
+        background-color: salmon;
+        width: 60px;
+        height: 100px;
+        order: 4;
+    }
