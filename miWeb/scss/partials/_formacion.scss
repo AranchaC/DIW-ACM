@@ -5,15 +5,15 @@
     align-items: center;
   
     &:before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 10.5%; /* Ajusta la posición inicial al centro del primer .formacion-item */
-      height: 2px;
-      width: 79%; /* Ajusta el ancho según sea necesario */
-      background-color: #333;
-      transform: translateY(-50%);
-      z-index: 1;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 10.5%; /* Ajusta la posición inicial al centro del primer .formacion-item */
+        height: 2px;
+        width: 79%; /* Ajusta el ancho según sea necesario */
+        background-color: #333;
+        transform: translateY(-50%);
+        z-index: 1;
     }
   }
   
@@ -86,10 +86,10 @@
 .item-5 {
     padding-top: 40px;
 }
-  .fecha-formacion {
-    -webkit-text-stroke: 1px var(--color-2);
+.fecha-formacion {
+-webkit-text-stroke: 1px var(--color-2);
     font-weight: bold;
     color: fuchsia;
     font-size: 180%;
-  }
+}
   
