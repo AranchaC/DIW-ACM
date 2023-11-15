@@ -14,7 +14,9 @@ section {
         
         top: -47px;
         color: var(--color-1);
-        text-shadow: 4px 4px 4px  rgb(251, 6, 251);
+        
+        // aplico include del mixin creado en estilos.scss
+        @include box-shadow(var(--color-6),(var(--color-6)));
         font-weight: bold;
         -webkit-text-stroke: 2px var(--color-2);
         font-size: 200%;
@@ -53,14 +55,6 @@ p.en-construccion {
     }  
 }
 
-.h3izq{
-
-}
-
-.h3der{
-
-
-}
 
 
 

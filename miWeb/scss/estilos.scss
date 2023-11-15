@@ -3,35 +3,51 @@
 // color.adobe
 // sass --watch miWeb/scss/estilos.scss miWeb/css/estilos.css
 
-//creo mapa para el ancho de iconos
+
+//creo mapa para el ancho de iconos.
 $tam-icons-width : (
  'pequenio':25px, 
  'medio':75px,
  'grande':180px
 );
 
-//creo mapa para el alto de iconos
+//creo mapa para el alto de iconos.
 $tam-icons-height : (
  'pequenio':25px, 
  'medio':75px,
  'grande':180px
 );
 
+//creo Mixing para el borde de algún texto.
+//hago include en _main.scss y en _header.scss.
+@mixin box-shadow($color1, $color2) {
+    text-shadow: 7px 4px 5px $color1, 7px 4px 5px $color2;
+}
+
+//creo función para ancho de elementos.
+//llamo a la función en _menu.scss.
+@function calcular-ancho($num-elementos) {
+    @return percentage(1 / $num-elementos);
+}
+
 //variables para los colores:
 $color-1-claro: white;
 $color-2-claro: black;
-$color-3-claro: rgb(192, 192, 192);
-$color-4-claro: rgb(180, 240, 255);
-$color-5-claro: rgb(214, 169, 255);
+$color-3-claro: #7DADF5; //menu
+$color-4-claro: #D4BDF5; //fondo1
+$color-5-claro: #B8D4F5; //fondo2
+$color-6-claro:  #42D3FF; //sombra texto
+$color-7-claro: #A231FF;
 
-//lista para los colores modo oscuro
+//lista para los colores modo oscuro.
 $colores-oscuros : (
     rgb(84, 98, 151), 
-    black,
-    #799bbe,
+    rgba(255, 255, 255, 0.629),
+    #264f77,//menu
     #57729E, 
     #6283AE,
-
+    #448af3,
+    #0043a0
 );
 
 //Variables de colores e interpolación en :root para
@@ -43,6 +59,8 @@ $colores-oscuros : (
         --color-3: #{$color-3-claro};
         --color-4: #{$color-4-claro};
         --color-5: #{$color-5-claro};
+        --color-6: #{$color-6-claro};
+        --color-7: #{$color-7-claro};
     }
     .tema-oscuro{
         --color-1:  #{nth($colores-oscuros,1)};
@@ -50,6 +68,9 @@ $colores-oscuros : (
         --color-3:  #{nth($colores-oscuros,3)};
         --color-4:  #{nth($colores-oscuros,4)};
         --color-5:  #{nth($colores-oscuros,5)};
+        --color-6:  #{nth($colores-oscuros,6)};
+        --color-7:  #{nth($colores-oscuros,7)};
+  
     }
 }
 
@@ -65,19 +86,19 @@ $debug:false;
 body{
     margin: 0;
     background: linear-gradient(var(--color-4), var(--color-5));
-
 }
 
+//importo todos los partials (en orden según estructura):
 @import "partials/header";
 
 @import "partials/menu";
-@import "partials/boton";
+    @import "partials/boton";
 
 @import "partials/main";
-@import "partials/experiencia";
-@import "partials/formacion";
-@import "partials/aficiones";
-@import "partials/contacto";
+    @import "partials/experiencia";
+    @import "partials/formacion";
+    @import "partials/aficiones";
+    @import "partials/contacto";
 
 @import "partials/footer";
 

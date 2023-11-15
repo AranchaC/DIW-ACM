@@ -20,6 +20,7 @@
         &:focus::placeholder {
             font-weight: bold;
             font-style: italic;
+            color: var(--color-7);
         }
 
         &[name=nombre]{
@@ -28,12 +29,12 @@
         }
 
         &[name=email]{
-            top: 120px;
+            top: 110px;
             width: 35%;
         }
 
         &[name=enviar]{
-            top: 180px;
+            top: 165px;
             width: 15%;
             background-color: var(--color-2);
             color: var(--color-1);
