@@ -1,10 +1,10 @@
 /* ****** CONTACTO ******** */
 
-
 .contacto {
+
     & textarea {
         position: absolute;
-        top: 80px;
+        top: 60px;
         bottom: 40px;
         left: 40px;
         width: 35%;
@@ -15,6 +15,7 @@
         left: 40%;
         padding: 8px;
         margin-left: 30px;
+        font-size: 1rem;
 
         &:focus::placeholder {
             font-weight: bold;
@@ -22,7 +23,7 @@
         }
 
         &[name=nombre]{
-            top: 80px;
+            top: 60px;
             width: 35%;
         }
 
@@ -52,8 +53,7 @@
         top: 50px;
         width: 10%;
         right: 20px;
-    
-    }
-    
+    }  
 }
+
 

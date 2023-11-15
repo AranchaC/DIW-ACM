@@ -207,18 +207,18 @@ p.en-construccion img {
 
 /* ****** EXPERIENCIA ****** */
 .experiencia {
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .expe {
-  border-top: 2px solid #000;
+  border-top: 5px double #ff5def;
   margin: 0 45px;
   padding: 0 20px;
   display: flex;
   align-items: center;
-  font-size: small;
 }
 
 .expe1 {
@@ -291,7 +291,7 @@ p.en-construccion img {
 .fecha-formacion {
   -webkit-text-stroke: 1% var(--color-2);
   font-weight: bold;
-  color: fuchsia;
+  color: #ff5def;
   font-size: 2%; /* Ajusta según sea necesario */
 }
 
@@ -343,7 +343,7 @@ p.en-construccion img {
 /* ****** CONTACTO ******** */
 .contacto textarea {
   position: absolute;
-  top: 80px;
+  top: 60px;
   bottom: 40px;
   left: 40px;
   width: 35%;
@@ -353,13 +353,14 @@ p.en-construccion img {
   left: 40%;
   padding: 8px;
   margin-left: 30px;
+  font-size: 1rem;
 }
 .contacto input:focus::placeholder {
   font-weight: bold;
   font-style: italic;
 }
 .contacto input[name=nombre] {
-  top: 80px;
+  top: 60px;
   width: 35%;
 }
 .contacto input[name=email] {

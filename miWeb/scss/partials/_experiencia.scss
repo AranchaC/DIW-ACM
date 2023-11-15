@@ -1,6 +1,7 @@
 /* ****** EXPERIENCIA ****** */
 
 .experiencia {
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,12 +11,12 @@
 }
 
 .expe {
-    border-top: 2px solid #000;
+    border-top: 5px double #ff5def;
     margin: 0 45px;
     padding: 0 20px;
     display: flex;
     align-items: center;
-    font-size: small;
+
 }
 
 .expe1 {

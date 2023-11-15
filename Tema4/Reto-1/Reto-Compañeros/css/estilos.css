@@ -1,12 +1,17 @@
 body{
     color: white;
-  
 
  
     }
     .contenedor-menu{
         width: 200px;
-
+        text-align: center;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; 
 
     }
     .item-m-1{
@@ -25,22 +30,36 @@ body{
     .item-m-3{
         background-color: #d6ae01;
         width: 60px;
+        height: 40px;
+        order: -4;
+
     }
     .item-m-35{
+        background-color: red;
+        width: 120px;
+        height: 10px;
+        order: -3;
 
     }
     .item-m-4{
+        background-color: #d6ae01;
+        width: 200px;
+        order: -2;
+        height: 20px;
 
     }
     .item-m-45{
         background-color: black;
         width: 150px;
         height: 10px;
+        order: -1;
     }
     
     .contenedor-central{ 
         display: flex;  
-        align-items: center;     
+        align-items: center; 
+        justify-content: center; 
+        margin: auto;   
 
     }
     .item-c-1{
@@ -76,6 +95,7 @@ body{
     }
     
     .contenedor-footer{
+        margin: auto;
         display: flex;
         width: 160px;
         flex-wrap: wrap;
