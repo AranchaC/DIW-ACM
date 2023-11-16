@@ -37,11 +37,13 @@ body > nav a , body > nav i{
 body{
     background: lightgray;
     margin: 10px;
+    height: 1000px;
 }
 main{
     background-color: #eee;
     float: left;   
-    width: 67%;
+    width: 70%;
+    padding: 10px;
     margin-left: 3%;
     column-count: 3;
     column-gap: 5%;
@@ -92,13 +94,17 @@ form{
 
 form label{
     margin: 5px;
-    display: block;
+    display: inline-block;
+    width: 30%;
 }
 
 form input[type="text"],
 form input[type="email"],
 form input[type="password"]{
     border: none;
+    width: 65%;
+    display: inline-block;
+    margin: 20px 0;
 }
 
 form input[type="submit"] , button{
@@ -158,8 +164,8 @@ footer > h2 {
 p#idAutor{
     font-style: italic;
     background-color: #eee;
-    top: 900px;
+    top: 766px;
     position: absolute;
-    left: 100px;
+    left: 72px;
     padding: 0px 500px;
 }
