@@ -6,6 +6,7 @@ body {
 }
 .encabezado, .contenido, .contenido-lateral, .pie-pagina {
     padding: 1em 2em;
+    display: block;
 }
 
 .contenido, .contenido-lateral, .pie-pagina {   
@@ -16,50 +17,54 @@ body {
     height: 80px;
 }
 
-.contenido {
 
-   
-}
 .contenido-lateral {    
     background-color: rgb(163, 163, 113); 
-    height: 500px;  
+    height: 400px;  
 }
 .post {
     background-color: rgba(117, 255, 26, 0.46);   
     margin-bottom: 1em;
     height: 100px;
-
 }
 .pie-pagina {    
     background-color: #000;   
 }
 
-@media only screen and (min-width: 768px){
-    body {
-        display: block;
-    }
-
+@media screen and (min-width: 640px) {
     .encabezado {
-        background-color: rgb(247,220,22);
-        height: 80px;
+        background-color: white;
     }
-
+    
     .contenido {
-        width: 80%;
-        
+        background-color: darkred; 
+    }
+}
+
+@media screen and (min-width: 890px){
+    .encabezado {
+        background-color: lightblue;
+
+    }
+    .contenido {
+        background-color: rgb(207, 123, 123);
+        float: left;
+        width: 40%;
+    }
+    .post {
+        background-color: rgb(232, 237, 91);   
+        margin-bottom: 1em;
+  
     }
     .contenido-lateral {    
         background-color: rgb(163, 163, 113); 
-        height: 300px;  
+        float: left;
+        width: 60%;
     }
-    .post {
-        background-color: rgba(117, 255, 26, 0.46);   
-        margin-bottom: 1em;
-        height: 100px;
-        width: 80%;
-    }
-    .pie-pagina {    
-        background-color: #000;   
+
+    .pie-pagina {
+        float: left;
+        width: 100%;
     }
 
 }
