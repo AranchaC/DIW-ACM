@@ -17,7 +17,7 @@ header {
         align-items: center;
         h1{
             @include box-shadow(black,white);
-            padding-top: 11%;
+            padding-top: 9%;
         }
     }
 
@@ -31,7 +31,7 @@ header {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-weight: bold;
         text-align: center; 
-        padding-top: 3%;
+        padding-top: 2%;
         border-left: 15px dotted white ;
         /* dashed, double, groove */
     }

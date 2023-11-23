@@ -48,7 +48,7 @@ header .headerIzq {
 }
 header .headerIzq h1 {
   text-shadow: 7px 4px 5px black, 7px 4px 5px white;
-  padding-top: 11%;
+  padding-top: 9%;
 }
 header .headerDer {
   background-image: url("../fotos/estrellas.jpg");
@@ -60,7 +60,7 @@ header .headerDer {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   text-align: center;
-  padding-top: 3%;
+  padding-top: 2%;
   border-left: 15px dotted white;
   /* dashed, double, groove */
 }
