@@ -1,0 +1,35 @@
+$negro: black;
+
+// mixin
+@mixin tamano_img {
+    padding: 20px;
+    width: 150px;
+}
+
+//lista
+$colores: (
+    green,
+    blue,
+    orange,
+);
+
+//mapa
+$aside: (
+    'float': left,
+    'width': 26%,
+    'margin': 2%,
+);
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@import "./partials/elSuperiores";
+@import "./partials/elCentrales";
+@import "./partials/elInferiores";
+
+
+
+
+

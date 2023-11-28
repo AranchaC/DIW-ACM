@@ -1,0 +1,28 @@
+/*
+    ELEMENTOS SUPERIORES
+*/
+header{
+    background-color: $negro;
+    position: sticky;
+    top: 7px;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+}
+header img {
+    height: 80px;
+}
+nav {    
+    /*position:*/ 
+    position: static;
+    display: block;
+    text-align: right;
+    margin: 10px 0;
+    
+}
+
+body > nav a , body > nav i{ 
+    display: inline-block;   
+    padding: 0 30px ;
+    color: $negro;
+}
