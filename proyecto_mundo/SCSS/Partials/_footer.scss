@@ -1,4 +1,5 @@
-footer {
+@media screen and (min-width: 890px){
+  footer {
     position: fixed;
     background-color: var(--color-1);
     bottom: 5px;
@@ -6,4 +7,4 @@ footer {
     text-align: center;
     height: 50px;
   }
-  
+} 

@@ -1,5 +1,5 @@
-
-.container {   
+@media screen and (min-width: 890px){
+  .container {   
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -29,3 +29,4 @@
     font-weight: bold;
     color: #fff;
   }
+}
