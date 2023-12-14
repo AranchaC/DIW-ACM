@@ -1,0 +1,17 @@
+header {
+    position: sticky;
+    background-color: var(--color-1);
+    color: var(--color-5);
+    width: 100%;
+    text-align: center;
+    top: 5px;
+    height: 50px;
+  }
+
+  nav {
+    height: 50px;
+    text-align: right;
+    padding: 20px;
+    background-color: var(--color-4);
+  }
+  

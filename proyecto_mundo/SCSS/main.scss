@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    height: 1250px;
+  }
+
+
+  $colores-claros : (
+ 
+  #4eda84,
+  #24b75d,
+  #24b75d,
+  #19a04e, 
+  #187d40
+);
+
+$colores-oscuros : (
+  #19a04e,
+  #187d40,
+  #186335,
+  #16512e,
+  #062d17
+);
+
+:root {
+  .tema-claro{
+  --color-1: #{nth($colores-claros,1)};
+  --color-2: #{nth($colores-claros,1)};
+  --color-3: #{nth($colores-claros,1)};
+  --color-4: #{nth($colores-claros,1)};
+  --color-5: #{nth($colores-claros,1)};
+  }
+  .tema-oscuro{
+    --color-1:  #{nth($colores-oscuros,1)};
+    --color-2:  #{nth($colores-oscuros,2)};
+    --color-3:  #{nth($colores-oscuros,3)};
+    --color-4:  #{nth($colores-oscuros,4)};
+    --color-5:  #{nth($colores-oscuros,5)};
+  }
+} 
+
+
+  @import "Partials/header";
+  @import "Partials/main";
+  @import "Partials/container";
+  @import "Partials/footer";
+  @import "Partials/boton";
