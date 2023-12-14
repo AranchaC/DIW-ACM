@@ -1,22 +1,27 @@
+// sass --watch miWeb/scss/estilos.scss miWeb/css/estilos.css
+//sass --watch proyecto_mundo/scss/main.scss proyecto_mundo/css/estilos.css
+
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    height: 1250px;
-  }
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  height: 1550px;
+}
 
 
-  $colores-claros : (
- 
+$colores-claros : (
   #4eda84,
   #24b75d,
   #24b75d,
   #19a04e, 
-  #187d40
+  #187d40,
+  black
 );
 
 $colores-oscuros : (
@@ -24,16 +29,18 @@ $colores-oscuros : (
   #187d40,
   #186335,
   #16512e,
-  #062d17
+  #062d17,
+  white
 );
 
 :root {
   .tema-claro{
   --color-1: #{nth($colores-claros,1)};
-  --color-2: #{nth($colores-claros,1)};
-  --color-3: #{nth($colores-claros,1)};
-  --color-4: #{nth($colores-claros,1)};
-  --color-5: #{nth($colores-claros,1)};
+  --color-2: #{nth($colores-claros,2)};
+  --color-3: #{nth($colores-claros,3)};
+  --color-4: #{nth($colores-claros,4)};
+  --color-5: #{nth($colores-claros,5)};
+  --color-6: #{nth($colores-claros,6)};
   }
   .tema-oscuro{
     --color-1:  #{nth($colores-oscuros,1)};
@@ -41,6 +48,7 @@ $colores-oscuros : (
     --color-3:  #{nth($colores-oscuros,3)};
     --color-4:  #{nth($colores-oscuros,4)};
     --color-5:  #{nth($colores-oscuros,5)};
+    --color-6:  #{nth($colores-oscuros,6)};
   }
 } 
 

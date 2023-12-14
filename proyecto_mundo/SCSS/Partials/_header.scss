@@ -1,18 +1,44 @@
+header {
+  position: sticky;
+  background-color: grey;
+  color: var(--color-5);
+  width: 100%;
+  text-align: center;
+  top: 5px;
+  height: 50px;
+  padding: 10px;
+}
+
+nav {
+  text-align: right;
+  padding: 20px;
+  background-color: var(--color-4);
+  display: block;
+  color: var(--color-6);
+  width: 100%;
+
+  & a {
+    display: inline-block;
+    padding: 5px 10px;
+  }
+}
+
+
 @media screen and (min-width: 890px){
   header {
-      position: sticky;
-      background-color: var(--color-1);
-      color: var(--color-5);
-      width: 100%;
-      text-align: center;
-      top: 5px;
-      height: 50px;
-    }
+    position: sticky;
+    background-color: var(--color-1);
+    color: var(--color-5);
+    width: 100%;
+    text-align: center;
+    top: 5px;
+    height: 50px;
+  }
 
-    nav {
-      height: 50px;
-      text-align: right;
-      padding: 20px;
-      background-color: var(--color-4);
-    }
+  nav {
+    height: 50px;
+    text-align: right;
+    padding: 20px;
+    background-color: var(--color-4);
+  }
 } 

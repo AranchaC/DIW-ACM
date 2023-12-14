@@ -1,21 +1,22 @@
 * {
-  padding: 0;
-  margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
-  height: 1250px;
+  height: 1550px;
 }
 
 :root .tema-claro {
   --color-1: #4eda84;
-  --color-2: #4eda84;
-  --color-3: #4eda84;
-  --color-4: #4eda84;
-  --color-5: #4eda84;
+  --color-2: #24b75d;
+  --color-3: #24b75d;
+  --color-4: #19a04e;
+  --color-5: #187d40;
+  --color-6: black;
 }
 :root .tema-oscuro {
   --color-1: #19a04e;
@@ -23,25 +24,50 @@ body {
   --color-3: #186335;
   --color-4: #16512e;
   --color-5: #062d17;
+  --color-6: white;
 }
 
 header {
   position: sticky;
-  background-color: var(--color-1);
+  background-color: grey;
   color: var(--color-5);
   width: 100%;
   text-align: center;
   top: 5px;
   height: 50px;
+  padding: 10px;
 }
 
 nav {
-  height: 50px;
   text-align: right;
   padding: 20px;
   background-color: var(--color-4);
+  display: block;
+  color: var(--color-6);
+  width: 100%;
+}
+nav a {
+  display: inline-block;
+  padding: 5px 10px;
 }
 
+@media screen and (min-width: 890px) {
+  header {
+    position: sticky;
+    background-color: var(--color-1);
+    color: var(--color-5);
+    width: 100%;
+    text-align: center;
+    top: 5px;
+    height: 50px;
+  }
+  nav {
+    height: 50px;
+    text-align: right;
+    padding: 20px;
+    background-color: var(--color-4);
+  }
+}
 .main-image {
   display: flex;
   width: 100%;
@@ -49,6 +75,8 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  gap: 15px;
   background-image: url("../imagenes/fondomain.jpeg");
   background-position: center;
   background-repeat: no-repeat;
@@ -60,46 +88,111 @@ nav {
   margin-bottom: 1rem;
 }
 
+@media screen and (min-width: 890px) {
+  .main-image {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../imagenes/fondomain.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main-image h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+}
 .container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 0;
   width: 90%;
   margin: 1rem auto;
-  background-color: rgb(42, 165, 142);
+  background-color: rgb(65, 165, 42);
 }
 
 .caja {
   background: #fff;
-  width: 20%;
+  width: 70%;
   text-align: center;
-  min-height: 200px;
-  margin-bottom: 2rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .caja img {
   width: 100%;
-  margin: auto;
 }
 
-.caja .info {
+.info {
   padding: 1rem 2rem;
   background: #363648;
   font-weight: bold;
   color: #fff;
+  text-align: center;
 }
 
+@media screen and (min-width: 890px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1rem auto;
+    background-color: rgb(42, 165, 142);
+  }
+  .caja {
+    background: #fff;
+    width: 20%;
+    text-align: center;
+    min-height: 200px;
+    margin-bottom: 2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  .caja img {
+    width: 100%;
+    margin: auto;
+  }
+  .caja .info {
+    padding: 1rem 2rem;
+    background: #363648;
+    font-weight: bold;
+    color: #fff;
+  }
+}
 footer {
   position: fixed;
   background-color: var(--color-1);
   bottom: 5px;
   width: 100%;
   text-align: center;
-  height: 50px;
+  padding: 5px;
+  display: block;
+  color: var(--color-6);
+}
+footer a {
+  display: inline-block;
+  padding: 5px 3%;
+  font-size: small;
 }
 
+@media screen and (min-width: 890px) {
+  footer {
+    position: fixed;
+    background-color: var(--color-1);
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+  }
+}
 .tema {
   opacity: 0;
   width: 0;
