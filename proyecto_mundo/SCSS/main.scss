@@ -1,6 +1,4 @@
-// sass --watch miWeb/scss/estilos.scss miWeb/css/estilos.css
-//sass --watch proyecto_mundo/scss/main.scss proyecto_mundo/css/estilos.css
-
+//sass --watch SCSS/main.scss CSS/estilos.css
 
 * {
   -webkit-box-sizing: border-box;
@@ -10,48 +8,95 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  height: 1550px;
+  background-color: var(--color-2);
+  color: white;
 }
 
 
-$colores-claros : (
-  #4eda84,
-  #24b75d,
-  #24b75d,
-  #19a04e, 
-  #187d40,
+$colores-clarosA : (
+  #0FF5B3,
+  #0FA1F5,
+  #0EEBF5,
+  #0FF565, 
+  #0F58F5,
   black
 );
 
-$colores-oscuros : (
-  #19a04e,
-  #187d40,
-  #186335,
-  #16512e,
-  #062d17,
+$colores-oscurosA : (
+  #007655,
+  #005e94,
+  #009ca4,
+  #008c33, 
+  #011e5e,
   white
 );
 
 :root {
   .tema-claro{
-  --color-1: #{nth($colores-claros,1)};
-  --color-2: #{nth($colores-claros,2)};
-  --color-3: #{nth($colores-claros,3)};
-  --color-4: #{nth($colores-claros,4)};
-  --color-5: #{nth($colores-claros,5)};
-  --color-6: #{nth($colores-claros,6)};
+  --color-1: #{nth($colores-clarosA,1)};
+  --color-2: #{nth($colores-clarosA,2)};
+  --color-3: #{nth($colores-clarosA,3)};
+  --color-4: #{nth($colores-clarosA,4)};
+  --color-5: #{nth($colores-clarosA,5)};
+  --color-6: #{nth($colores-clarosA,6)};
   }
   .tema-oscuro{
-    --color-1:  #{nth($colores-oscuros,1)};
-    --color-2:  #{nth($colores-oscuros,2)};
-    --color-3:  #{nth($colores-oscuros,3)};
-    --color-4:  #{nth($colores-oscuros,4)};
-    --color-5:  #{nth($colores-oscuros,5)};
-    --color-6:  #{nth($colores-oscuros,6)};
+    --color-1:  #{nth($colores-oscurosA,1)};
+    --color-2:  #{nth($colores-oscurosA,2)};
+    --color-3:  #{nth($colores-oscurosA,3)};
+    --color-4:  #{nth($colores-oscurosA,4)};
+    --color-5:  #{nth($colores-oscurosA,5)};
+    --color-6:  #{nth($colores-oscurosA,6)};
   }
 } 
 
+@media screen and (min-width: 890px){
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    height: 1850px;
+  }
+
+
+  $colores-claros : (
+    #4eda84,
+    #24b75d,
+    #24b75d,
+    #19a04e, 
+    #187d40,
+  );
+
+  $colores-oscuros : (
+    #19a04e,
+    #187d40,
+    #186335,
+    #16512e,
+    #062d17,
+  );
+
+  :root {
+    .tema-claro{
+    --color-1: #{nth($colores-claros,1)};
+    --color-2: #{nth($colores-claros,2)};
+    --color-3: #{nth($colores-claros,3)};
+    --color-4: #{nth($colores-claros,4)};
+    --color-5: #{nth($colores-claros,5)};
+    }
+    .tema-oscuro{
+      --color-1:  #{nth($colores-oscuros,1)};
+      --color-2:  #{nth($colores-oscuros,2)};
+      --color-3:  #{nth($colores-oscuros,3)};
+      --color-4:  #{nth($colores-oscuros,4)};
+      --color-5:  #{nth($colores-oscuros,5)};
+    }
+  } 
+}
 
   @import "Partials/header";
   @import "Partials/main";

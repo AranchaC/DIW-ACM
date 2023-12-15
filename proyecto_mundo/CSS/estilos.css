@@ -6,27 +6,53 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  height: 1550px;
+  background-color: var(--color-2);
+  color: white;
 }
 
 :root .tema-claro {
-  --color-1: #4eda84;
-  --color-2: #24b75d;
-  --color-3: #24b75d;
-  --color-4: #19a04e;
-  --color-5: #187d40;
+  --color-1: #0FF5B3;
+  --color-2: #0FA1F5;
+  --color-3: #0EEBF5;
+  --color-4: #0FF565;
+  --color-5: #0F58F5;
   --color-6: black;
 }
 :root .tema-oscuro {
-  --color-1: #19a04e;
-  --color-2: #187d40;
-  --color-3: #186335;
-  --color-4: #16512e;
-  --color-5: #062d17;
+  --color-1: #007655;
+  --color-2: #005e94;
+  --color-3: #009ca4;
+  --color-4: #008c33;
+  --color-5: #011e5e;
   --color-6: white;
 }
 
+@media screen and (min-width: 890px) {
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    height: 1850px;
+  }
+  :root .tema-claro {
+    --color-1: #4eda84;
+    --color-2: #24b75d;
+    --color-3: #24b75d;
+    --color-4: #19a04e;
+    --color-5: #187d40;
+  }
+  :root .tema-oscuro {
+    --color-1: #19a04e;
+    --color-2: #187d40;
+    --color-3: #186335;
+    --color-4: #16512e;
+    --color-5: #062d17;
+  }
+}
 header {
   position: sticky;
   background-color: grey;
@@ -34,14 +60,19 @@ header {
   width: 100%;
   text-align: center;
   top: 5px;
-  height: 50px;
+  height: 190px;
   padding: 10px;
+  background-image: url("../imagenes/mundoHeader.jpg");
+  background-position: center;
+  background-repeat: space;
+  background-size: cover;
+  border: 2px solid #000;
 }
 
 nav {
   text-align: right;
   padding: 20px;
-  background-color: var(--color-4);
+  background-color: var(--color-1);
   display: block;
   color: var(--color-6);
   width: 100%;
@@ -116,7 +147,7 @@ nav a {
   padding: 30px 0;
   width: 90%;
   margin: 1rem auto;
-  background-color: rgb(65, 165, 42);
+  background-color: var(--color-3);
 }
 
 .caja {
@@ -132,9 +163,9 @@ nav a {
 
 .info {
   padding: 1rem 2rem;
-  background: #363648;
+  background: var(--color-4);
   font-weight: bold;
-  color: #fff;
+  color: var(--color-6);
   text-align: center;
 }
 
@@ -168,7 +199,6 @@ nav a {
   }
 }
 footer {
-  position: fixed;
   background-color: var(--color-1);
   bottom: 5px;
   width: 100%;
