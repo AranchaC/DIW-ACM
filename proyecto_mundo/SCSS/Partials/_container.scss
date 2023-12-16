@@ -10,6 +10,7 @@
   width: 90%;
   margin: 1rem auto;
   background-color: var(--color-3);
+  text-align: center;
 }
 
 .caja {
@@ -17,12 +18,11 @@
   width: 70%;
   text-align: center;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-
+  & img {
+    width: 100%;
+  }
 }
-.caja img {
-  width: 100%;
 
-}
 
 .info {
   padding: 1rem 2rem;

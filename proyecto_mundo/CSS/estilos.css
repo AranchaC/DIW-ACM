@@ -91,6 +91,7 @@ nav a {
     text-align: center;
     top: 5px;
     height: 50px;
+    background-image: none;
   }
   nav {
     height: 50px;
@@ -148,6 +149,7 @@ nav a {
   width: 90%;
   margin: 1rem auto;
   background-color: var(--color-3);
+  text-align: center;
 }
 
 .caja {
@@ -156,7 +158,6 @@ nav a {
   text-align: center;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-
 .caja img {
   width: 100%;
 }
