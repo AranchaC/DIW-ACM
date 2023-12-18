@@ -1,0 +1,26 @@
+footer {
+  background-color: var(--color-1);
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  display: block;
+  color: var(--color-6);
+
+  & a {
+    display: inline-block;
+    padding: 5px 3%;
+    font-size: small;
+  }
+}
+
+@media screen and (min-width: 890px){
+  footer {
+    position: fixed;
+    background-color: var(--color-1);
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+  }
+}
