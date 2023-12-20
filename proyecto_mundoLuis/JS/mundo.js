@@ -18,7 +18,7 @@ colores.set(3, 'black');
 
 let mapimagen = new Map();
 mapimagen.set(0, './imagenes/img1.jpeg');   
-mapimagen.set(1, './imagenes/img2.jpeg")');   
+mapimagen.set(1, './imagenes/img2.jpeg');   
 mapimagen.set(2, './imagenes/img3.jpeg');   
 mapimagen.set(3, './imagenes/img4.jpeg');   
 
