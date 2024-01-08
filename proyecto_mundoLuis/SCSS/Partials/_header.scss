@@ -29,9 +29,11 @@ nav {
 @media screen and (min-width: 890px){
   header {
     position: sticky;
+    background-color: var(--color-1);
+    color: var(--color-5);
     width: 100%;
+    text-align: center;
     top: 5px;
-    background-image: none;
     height: 50px;
   }
 
