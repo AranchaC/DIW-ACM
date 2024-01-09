@@ -26,15 +26,37 @@ nav {
   }
 }
 
+@media screen and (min-width: 640px) {
+  header {
+    background-image: none;
+    height: 90px;
+  }
+  nav {
+    margin: 0%;
+    height: 50px;
+    text-align: center;
+    padding: 30px;
+    background-color: var(--color-4);
+    display: block;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+}
+
 @media screen and (min-width: 890px){
   header {
     position: sticky;
+    background-image: none;
     background-color: var(--color-1);
     color: var(--color-5);
     width: 100%;
     text-align: center;
     top: 5px;
-    height: 50px;
+    height: 90px;
   }
 
   nav {

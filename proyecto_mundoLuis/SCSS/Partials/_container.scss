@@ -11,7 +11,6 @@
   background-color: var(--color-3);
 }
 
-
 .info {
   padding: 1rem 2rem;
   background: var(--color-4);
@@ -21,7 +20,7 @@
 
 }
 @mixin cajas {
-  max-width: 100%;
+  width: 100%;
   background-position: center;
   background-repeat: space;
   background-size: cover;
@@ -29,6 +28,8 @@
   text-align: center;
   margin-bottom: 2rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  height: 220px;
+  max-width: 100%;
 }
 
 $zFondos600 : img1 img2 img3 img4;
@@ -38,16 +39,46 @@ $zFondos600 : img1 img2 img3 img4;
     .caja-#{$img} {
       background-image: url("../imagenes/#{$img}.jpeg");
       @include cajas;
-      height: 250px;
+
     }
   }
 }
 
 .cajaConten {
-  width: 70%;
-
+  width: 85%;
 }
 
+@media screen and (min-width: 640px) {
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 1rem auto;
+    background-color: rgb(42, 165, 142);
+    background-color: var(--color-4);
+    justify-content: center;
+    align-content: center;
+    gap: 100px +30;
+    padding: 40px;
+
+  }
+
+  .cajaConten {
+  width: calc((100% - 20px) / 3);
+  // width: 40%;
+
+  }
+
+  .info {
+    bottom: 0%;
+    padding: 1rem 2rem;
+    background: #363648;
+    font-weight: bold;
+    color: #fff;
+  }
+}
 
 @media screen and (min-width: 890px){
 
@@ -76,11 +107,10 @@ $zFondos600 : img1 img2 img3 img4;
 
   @mixin cajas {
     max-width: 100%;
-    height: 300px;
+    height: 150px;
     background-repeat: no-repeat;
     margin: auto;
     text-align: center;
-    min-height: 200px;
     margin-bottom: 2rem;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   }
@@ -92,12 +122,11 @@ $zFondos600 : img1 img2 img3 img4;
 
   #imagen-principal {
     max-width: 100%;
-    height: 400px;
-    border: 1px solid #ff0000;
+    height: 450px;
+    //border: 1px solid #ff0000;
     background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
-
-
   }
 
   $zFondos600 : img1 img2 img3 img4;
@@ -107,7 +136,6 @@ $zFondos600 : img1 img2 img3 img4;
       .caja-#{$img} {
         background-image: url("../imagenes/#{$img}.jpeg");
         @include cajas;
-
       }
     }
   }
@@ -118,6 +146,6 @@ $zFondos600 : img1 img2 img3 img4;
   
   .cajaContenPrincipal {
     width: 100%;
-    height: 410px;
+    height: 440px;
   }
 }

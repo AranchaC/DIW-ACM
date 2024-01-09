@@ -18,6 +18,24 @@
   }
 }
 
+@media screen and (min-width: 640px) { 
+
+  input {
+    padding: 10px 20px;
+    background-color: var(--color-1);
+    color: var(--color-4);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input:hover {
+    background-color: #B0B39E;
+  }
+  input:active {
+    background-color: var(--color-5);
+  }
+
+}
 
 @media screen and (min-width: 890px){
   .main-image {
