@@ -1,0 +1,153 @@
+.container {   
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  align-items: center;
+  gap: 100px;
+  padding: 30px 0;
+  width: 90%;
+  margin: 1rem auto;
+  background-color: var(--color-3);
+}
+
+.info {
+  padding: 1rem 2rem;
+  background: var(--color-4);
+  font-weight: bold;
+  color: var(--color-6);
+  text-align: center;
+
+}
+@mixin cajas {
+  width: 100%;
+  background-position: center;
+  background-repeat: space;
+  background-size: cover;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  height: 220px;
+  max-width: 100%;
+}
+
+$zFondos600 : img1 img2 img3 img4;
+
+.container {
+  @each $img in $zFondos600 {
+    .caja-#{$img} {
+      background-image: url("../imagenes/#{$img}.jpeg");
+      @include cajas;
+
+    }
+  }
+}
+
+.cajaConten {
+  width: 85%;
+}
+
+@media screen and (min-width: 640px) {
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 1rem auto;
+    background-color: rgb(42, 165, 142);
+    background-color: var(--color-4);
+    justify-content: center;
+    align-content: center;
+    gap: 100px 150px;
+    padding: 40px;
+
+  }
+
+  .cajaConten {
+  width: calc((100% - 20px) / 3);
+  // width: 40%;
+
+  }
+
+  
+
+  .info {
+    bottom: 0%;
+    padding: 1rem 2rem;
+    background: #363648;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 890px){
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1rem auto;
+    background-color: rgb(42, 165, 142);
+    
+  }
+
+  .info {
+    padding: 1rem 2rem;
+    background: #363648;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .cajaConten {
+    width: 20%;
+  }
+
+  @mixin cajas {
+    max-width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .cajaContenPrincipal{
+    width: 100%;
+    
+  }
+
+  #imagen-principal {
+    max-width: 100%;
+    height: 450px;
+    //border: 1px solid #ff0000;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+  }
+
+  $zFondos600 : img1 img2 img3 img4;
+
+  .container {
+    @each $img in $zFondos600 {
+      .caja-#{$img} {
+        background-image: url("../imagenes/#{$img}.jpeg");
+        @include cajas;
+      }
+    }
+  }
+
+  .cajaConten {
+    width: 20%;
+  }
+  
+  .cajaContenPrincipal {
+    width: 100%;
+    height: 440px;
+  }
+}
