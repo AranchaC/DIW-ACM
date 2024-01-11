@@ -39,7 +39,6 @@ $zFondos600 : img1 img2 img3 img4;
     .caja-#{$img} {
       background-image: url("../imagenes/#{$img}.jpeg");
       @include cajas;
-
     }
   }
 }
@@ -66,12 +65,8 @@ $zFondos600 : img1 img2 img3 img4;
   }
 
   .cajaConten {
-  width: calc((100% - 20px) / 3);
-  // width: 40%;
-
+    width: calc((100% - 20px) / 3);
   }
-
-  
 
   .info {
     bottom: 0%;

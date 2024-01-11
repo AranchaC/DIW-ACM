@@ -20,12 +20,16 @@
   </head>
 
   <body class="tema-claro">
+
     <header>
       <p class="titulo">Arancha, Rodrigo y Luisan</p>
+
+      <!-- BOTÓN -->
       <label class="switch-5">
         <input class="tema" type="checkbox" id="toggleTheme" />
         <span class="slider-5"></span>
       </label>
+
     </header>
 
     <nav>
@@ -36,7 +40,6 @@
     </nav>
 
     <main class="main-image">
-      <!-- imagen con titulo -->
       <h1>EL MUNDO</h1>
       <input type="button" value="EL MUNDO" />
     </main>
@@ -83,14 +86,69 @@
           <source media="(max-width: 640px)" srcset="./imagenes/mundoHeader.jpg">
           <source media="(min-width: 645px)" srcset="./imagenes/mundoHeader2.jpeg">
 
-          <img class="imagenArt" src="./imagenes/mundoHeader.jpg">
+          <img class="imagenArt" src="./imagenes/mundoHeader.jpg" loading="lazy">
         </picture>
       </div>
 
     </div> 
+    
+    <div class="tabla">
+      <table>
+        <thead>
+          <tr>
+            <th>País</th>
+            <th>Gentilicio</th>
+            <th>Animal Representativo</th>
+            <th>Comida Típica</th>
+            <th>Flor Típica</th>
+            <th>Moneda</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Japón</td>
+            <td>Japonés</td>
+            <td>Zorro Japonés</td>
+            <td>Sushi</td>
+            <td>Sakura (Cerezo en flor)</td>
+            <td>Yen</td>
+          </tr>
+          <tr>
+            <td>Italia</td>
+            <td>Italiano</td>
+            <td>Lobo Apenino</td>
+            <td>Pizza</td>
+            <td>Lirio</td>
+            <td>Euro</td>
+          </tr>
+          <tr>
+            <td>Australia</td>
+            <td>Australiano</td>
+            <td>Canguro</td>
+            <td>Barbacoa (BBQ)</td>
+            <td>Acacia</td>
+            <td>Dólar Australiano</td>
+          </tr>
+          <tr>
+            <td>Marruecos</td>
+            <td>Marroquí</td>
+            <td>Camello</td>
+            <td>Cuscús</td>
+            <td>Rosa de Damasco</td>
+            <td>Dirham Marroquí</td>
+          </tr>
+          <tr>
+            <td>Nueva Zelanda</td>
+            <td>Neozelandés</td>
+            <td>Kiwi</td>
+            <td>Hangi (Asado maorí)</td>
+            <td>Kowhai</td>
+            <td>Dólar Neozelandés</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-
- 
     <footer>
       <h3>Los mejores creadores de DAW2, con la colaboración de Agustín</h3>
     </footer>

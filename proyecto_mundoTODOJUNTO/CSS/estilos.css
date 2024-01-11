@@ -74,25 +74,24 @@ body {
 }
 header {
   position: sticky;
-  background-color: var(--color-2);
   width: 100%;
-  text-align: center;
   top: 5px;
-  height: 80px;
+  padding: 10px;
+  background-color: var(--color-5);
   border: 2px solid #000;
+  text-align: center;
   font-size: 3vw;
   font-weight: bold;
   color: var(--color-6);
-  padding: 10px;
 }
 
 nav {
-  text-align: right;
+  display: block;
+  width: 100%;
   padding: 20px;
   background-color: var(--color-1);
-  display: block;
+  text-align: right;
   color: var(--color-6);
-  width: 100%;
 }
 nav a {
   display: inline-block;
@@ -100,35 +99,24 @@ nav a {
 }
 
 @media screen and (min-width: 640px) {
-  header {
-    background-image: none;
-    height: 90px;
-  }
   p.header {
     padding-bottom: 10px;
   }
   nav {
     margin: 0%;
+    padding: 30px;
     height: 50px;
     text-align: center;
-    padding: 30px;
     background-color: var(--color-4);
-    display: block;
   }
   nav a {
-    display: inline-block;
     padding: 0 20px;
   }
 }
 @media screen and (min-width: 890px) {
   header {
-    position: sticky;
-    background-image: none;
     background-color: var(--color-1);
     color: var(--color-5);
-    width: 100%;
-    text-align: center;
-    top: 5px;
     height: 110px;
   }
   nav {
@@ -157,6 +145,24 @@ nav a {
   margin-bottom: 1rem;
 }
 
+.main-image h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  -webkit-animation: luz 2s ease-in-out infinite alternate;
+  -moz-animation: luz 2s ease-in-out infinite alternate;
+  animation: luz 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes luz {
+  from {
+    color: #fff;
+    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+  }
+  to {
+    color: gray;
+    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+  }
+}
 @media screen and (min-width: 640px) {
   input {
     padding: 10px 20px;
@@ -174,34 +180,8 @@ nav a {
   }
 }
 @media screen and (min-width: 890px) {
-  .main-image {
-    display: flex;
-    width: 100%;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../imagenes/fondomain.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .main-image h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    -webkit-animation: luz 2s ease-in-out infinite alternate;
-    -moz-animation: luz 2s ease-in-out infinite alternate;
-    animation: luz 2s ease-in-out infinite alternate;
-  }
-  @-webkit-keyframes luz {
-    from {
-      color: #fff;
-      text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
-    }
-    to {
-      color: gray;
-      text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
-    }
+  input {
+    color: black;
   }
 }
 .container {
@@ -386,35 +366,25 @@ nav a {
   }
 }
 footer {
-  background-color: var(--color-1);
+  position: fixed;
   bottom: 5px;
   width: 100%;
   text-align: center;
   padding: 5px;
-  display: block;
+  background-color: var(--color-1);
   color: var(--color-6);
-}
-footer a {
-  display: inline-block;
-  padding: 5px 3%;
-  font-size: small;
+  font-size: 2vw;
 }
 
 @media screen and (min-width: 640px) {
   footer {
-    text-align: center;
     padding: 20px;
     background-color: var(--color-1);
   }
 }
 @media screen and (min-width: 890px) {
   footer {
-    position: fixed;
     background-color: var(--color-1);
-    bottom: 5px;
-    width: 100%;
-    text-align: center;
-    height: 50px;
   }
 }
 .tema {
@@ -433,7 +403,7 @@ footer a {
 .slider-5 {
   position: absolute;
   cursor: pointer;
-  top: 0;
+  top: 5px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -478,6 +448,36 @@ input:checked + .slider-5 {
   height: 300px;
   margin-bottom: 20px;
   padding-top: 20px;
+}
+
+.tabla {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  align-items: center;
+  gap: 100px;
+  padding: 30px 0;
+  width: 90%;
+  margin: 1rem auto;
+  background-color: var(--color-3);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
 }
 
 /*# sourceMappingURL=estilos.css.map */
