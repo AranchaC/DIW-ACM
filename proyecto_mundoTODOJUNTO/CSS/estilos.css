@@ -459,7 +459,7 @@ input:checked + .slider-5 {
   gap: 100px;
   padding: 30px 0;
   width: 90%;
-  margin: 1rem auto;
+  margin: 5rem auto;
   background-color: var(--color-3);
   overflow-x: auto;
 }
@@ -478,6 +478,38 @@ th, td {
 
 th {
   background-color: #f2f2f2;
+}
+
+#thMoneda, #tdMoneda,
+#thFlor, #tdFlor,
+#thComida, #tdComida,
+#thAnimal, #tdAnimal {
+  display: none;
+}
+
+@media screen and (min-width: 640px) {
+  #thComida, #tdComida,
+  #thAnimal, #tdAnimal {
+    display: table-cell;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 890px) {
+  #thMoneda, #tdMoneda,
+  #thFlor, #tdFlor,
+  #thComida, #tdComida,
+  #thAnimal, #tdAnimal {
+    display: table-cell;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
