@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El mundo by Arancha, ROdri y Luis</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css" />
+    <script src="./JS/mundo.js" defer></script>
+  </head>
+
+  <body class="tema-claro">
+
+    <header>
+      <p class="titulo">El Mundo</p>
+
+      <!-- BOTÓN -->
+      <label class="switch-5">
+        <input class="tema" type="checkbox" id="toggleTheme" />
+        <span class="slider-5"></span>
+      </label>
+
+    </header>
+
+    <nav>
+      <a>Naturaleza</a>
+      <a>Gastronomía</a>
+      <a>Monumentos</a>
+      <a>Fauna</a>
+    </nav>
+
+    <main class="main-image">
+      <h1>THE WORLD</h1>
+      <input type="button" value="EL MUNDO" />
+    </main>
+
+    <div class="container">
+
+      <div class="cajaConten">
+        <div class="caja-img1"></div>
+        <div class="info">
+          <p class="name">Naturaleza</p>
+        </div>      
+      </div>
+
+      <div class="cajaConten">
+        <div class="caja-img2"></div>
+        <div class="info">
+          <p class="name">Gastronomía</p>
+        </div>
+      </div>
+
+      <div class="cajaConten">
+        <div class="caja-img3"></div>
+        <div class="info">
+          <p class="name">Monumentos</p>    
+        </div>
+      </div>
+
+      <div class="cajaConten">
+        <div class="caja-img4"></div>
+        <div class="info">
+          <p class="name">Fauna</p>
+        </div>
+      </div>
+
+      <div class="cajaContenPrincipal">
+        <div id="imagen-principal"></div>
+      </div>
+
+      <div class="art">
+        <picture>
+          <source media="(max-width: 575px)" srcset="./imagenes/mundoHeader.jpg">
+          <source media="(min-width: 576px)" srcset="./imagenes/mundoHeader2.jpeg">
+
+          <img class="imagenArt" src="./imagenes/mundoHeader.jpg" loading="lazy">
+        </picture>
+      </div>
+
+    </div> 
+
+    <div class="divVideo">
+      <video controls autoplay loop>
+        <source src="./imagenes/video.mp4" loading="lazy">
+      </video>
+    </div>
+    
+    <div class="tabla">
+      <table>
+        <thead>
+          <tr>
+            <th id="thPais">País</th>
+            <th>Gentilicio</th>
+            <th id="thAnimal">Animal Representativo</th>
+            <th id="thComida">Comida Típica</th>
+            <th id="thFlor">Flor Típica</th>
+            <th id="thMoneda">Moneda</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Japón</td>
+            <td>Japonés</td>
+            <td id="tdAnimal">Zorro Japonés</td>
+            <td id="tdComida">Sushi</td>
+            <td id="tdFlor">Sakura (Cerezo en flor)</td>
+            <td id="tdMoneda">Yen</td>
+          </tr>
+          <tr>
+            <td>Italia</td>
+            <td>Italiano</td>
+            <td id="tdAnimal">Lobo Apenino</td>
+            <td id="tdComida">Pizza</td>
+            <td id="tdFlor">Lirio</td>
+            <td id="tdMoneda">Euro</td>
+          </tr>
+          <tr>
+            <td>Australia</td>
+            <td>Australiano</td>
+            <td id="tdAnimal">Canguro</td>
+            <td id="tdComida">Barbacoa (BBQ)</td>
+            <td id="tdFlor">Acacia</td>
+            <td id="tdMoneda">Dólar Australiano</td>
+          </tr>
+          <tr>
+            <td>Marruecos</td>
+            <td>Marroquí</td>
+            <td id="tdAnimal">Camello</td>
+            <td id="tdComida">Cuscús</td>
+            <td id="tdFlor">Rosa de Damasco</td>
+            <td id="tdMoneda">Dirham Marroquí</td>
+          </tr>
+          <tr>
+            <td>Nueva Zelanda</td>
+            <td>Neozelandés</td>
+            <td id="tdAnimal">Kiwi</td>
+            <td id="tdComida">Hangi (Asado maorí)</td>
+            <td id="tdFlor">Kowhai</td>
+            <td id="tdMoneda">Dólar Neozelandés</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+
+    <footer>
+      <h3>Los mejores creadores de DAW2, con la colaboración de Agustín</h3>
+    </footer>
+    
+  </body>
+</html>

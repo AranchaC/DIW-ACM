@@ -12,7 +12,6 @@ body {
   color: white;
 }
 
-
 $colores-clarosA : (
   #0FF5B3,
   #0FA1F5,
@@ -49,6 +48,7 @@ $colores-oscurosA : (
     --color-6:  #{nth($colores-oscurosA,6)};
   }
 } 
+
 //Rodri
 @media screen and (min-width: 640px) {
   
@@ -102,12 +102,9 @@ $colores-oscurosA : (
       color: #fff;
       height: 1450px;
       //height: 2250px;
-
     }
 
-
     $colores-claros : (
-  
     #4eda84,
     #24b75d,
     #24b75d,
@@ -141,7 +138,6 @@ $colores-oscurosA : (
   } 
 }
 
-
   @import "Partials/header";
   @import "Partials/main";
   @import "Partials/container";
@@ -149,5 +145,3 @@ $colores-oscurosA : (
   @import "Partials/boton";
   @import "Partials/artDirector";
   @import "Partials/tabla";
-
-  

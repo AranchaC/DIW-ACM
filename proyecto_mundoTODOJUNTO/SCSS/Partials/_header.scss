@@ -3,11 +3,11 @@ header {
   width: 100%;
   top: 5px;
   padding: 10px;
-  background-color: var(--color-5);
   border: 2px solid #000;
   text-align: center;
   font-size: 3vw;
   font-weight: bold;
+  background-color: var(--color-5);
   color: var(--color-6);
 }
 
@@ -42,6 +42,7 @@ nav {
 
 @media screen and (min-width: 890px){
   header {
+    position: sticky;
     background-color: var(--color-1);
     color: var(--color-5);
     height: 110px;
