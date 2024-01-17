@@ -73,15 +73,21 @@ body {
 
 .nav__contenedor {
   height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.nav__logo {
+  grid-area: 1/2/2/3;
 }
 
 .nav__enlace {
   color: #fff;
   text-decoration: none;
   margin-left: 1em;
+  grid-column: mid-end/col-end;
+  grid-area: 1/4/2/5;
 }
 
 /*# sourceMappingURL=estilos.css.map */

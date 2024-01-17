@@ -5,18 +5,38 @@
     background: #239B56;
     height: var(--height-nav);
     color: #fff;
+
+
 }
 
 .nav__contenedor{
     height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+
+    display: grid;
+    // 1 row / 5 col
+    // grid-template-columns:  [col-start] 1fr 
+    //                         [mid-start] 1fr
+    //                         [mid-end] 1fr 
+    //                         [col-end];
+    // grid-template-rows: [row-start] 1fr [row-end];
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr; 
+}
+
+.nav__logo {
+    // grid-column: col-start / mid-start;
+    grid-area: 1 / 2 / 2 / 3; 
 }
 
 .nav__enlace{
     color: #fff;
     text-decoration: none;
     margin-left: 1em;
+    grid-column: mid-end / col-end;
+    grid-area: 1 / 4 / 2 / 5; 
+    
 }
 
