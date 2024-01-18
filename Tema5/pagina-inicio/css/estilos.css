@@ -24,18 +24,21 @@ body {
 }
 
 .inicio__main {
-  display: flex;
   height: calc(100vh - var(--height-nav));
-  align-items: center;
   min-height: 600px;
+  display: grid;
+  grid-template-columns: [col-start] 1fr [mid-start] 1fr [mid-end] 1fr [col-end];
+  grid-template-rows: [row-start] 1fr [row-mid-start] 1fr [row-mid-end] 1fr [row-end];
 }
 
 .inicio__texts {
-  flex-basis: 70%;
+  grid-column: col-start/mid-end;
+  grid-row: row-mid-start/row-mid-end;
 }
 
 .inicio__picture {
-  flex-basis: 30%;
+  grid-column: mid-end/col-end;
+  grid-row: row-mid-start/row-mid-end;
 }
 
 .inicio__img {
@@ -74,20 +77,25 @@ body {
 .nav__contenedor {
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-columns: [col-start] 1fr [mid-start] 1fr [mid-end] 1fr [col-end];
+  grid-template-rows: [row-start] 1fr [row-mid-start] 1fr [row-mid-end] 1fr [row-end];
 }
 
 .nav__logo {
-  grid-area: 1/2/2/3;
+  grid-column: col-start/mid-start;
+  grid-row: row-mid-start/row-mid-end;
+}
+
+.nav__enlaces {
+  grid-column: mid-end/col-end;
+  grid-row: row-mid-start/row-mid-end;
+  padding: 5px;
 }
 
 .nav__enlace {
   color: #fff;
   text-decoration: none;
   margin-left: 1em;
-  grid-column: mid-end/col-end;
-  grid-area: 1/4/2/5;
 }
 
 /*# sourceMappingURL=estilos.css.map */

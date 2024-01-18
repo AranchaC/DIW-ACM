@@ -17,26 +17,41 @@
 
     display: grid;
     // 1 row / 5 col
-    // grid-template-columns:  [col-start] 1fr 
-    //                         [mid-start] 1fr
-    //                         [mid-end] 1fr 
-    //                         [col-end];
+    grid-template-columns:  [col-start] 1fr 
+                            [mid-start] 1fr
+                            [mid-end] 1fr 
+                            [col-end];
+    // grid-template-columns:  
+    // [col-start] 1fr 
+    // [col-mid1-start] 2fr
+    // [col-mid2-end] 3fr 
+    // [col-mid3-end] 4fr 
+    // [mid-start] 5fr
+    // [col-end];
     // grid-template-rows: [row-start] 1fr [row-end];
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr; 
+    grid-template-rows: [row-start] 1fr 
+                        [row-mid-start] 1fr 
+                        [row-mid-end] 1fr
+                        [row-end];
 }
 
 .nav__logo {
-    // grid-column: col-start / mid-start;
-    grid-area: 1 / 2 / 2 / 3; 
+    grid-column: col-start / mid-start;
+    grid-row: row-mid-start / row-mid-end;
+    
+
+}
+
+.nav__enlaces{
+    grid-column: mid-end / col-end;
+    grid-row: row-mid-start / row-mid-end;
+    padding: 5px;
 }
 
 .nav__enlace{
     color: #fff;
     text-decoration: none;
-    margin-left: 1em;
-    grid-column: mid-end / col-end;
-    grid-area: 1 / 4 / 2 / 5; 
-    
+    margin-left: 1em; 
+
 }
 

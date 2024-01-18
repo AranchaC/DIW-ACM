@@ -1,22 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 
-.inicio__main{
-    display: flex;
+.inicio__main{ 
     height: calc(100vh - var(--height-nav));
-    align-items: center;
     min-height: 600px;
+    // display: flex;
+    // align-items: center;
+
+    display: grid;
+    // 3 col / 3 row
+    grid-template-columns:  [col-start] 1fr 
+                            [mid-start] 1fr
+                            [mid-end] 1fr 
+                            [col-end];
+    grid-template-rows: [row-start] 1fr 
+                        [row-mid-start] 1fr 
+                        [row-mid-end] 1fr
+                        [row-end];
 }
 
 .inicio__texts{
-
-    flex-basis: 70%;
+   // flex-basis: 70%;
+   grid-column: col-start/ mid-end;
+   grid-row: row-mid-start / row-mid-end;
 }
 
 
-.inicio__picture{
-    
-    flex-basis: 30%;
+.inicio__picture{  
+    //flex-basis: 30%;
+    grid-column: mid-end / col-end;
+    grid-row: row-mid-start / row-mid-end;
 }
 
 .inicio__img{
