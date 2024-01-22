@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f2f2;
+}
+
+.tarjeta {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 80px 0;
+  display: grid;
+  grid-template-columns: [col-start col-1-start] 1fr [col-1-end col-2-start] 1fr [col-2-end col-3-start] 1fr [col-3-end col-end];
+  grid-template-rows: [row-start row-1-start] 4fr [row-1-end row-2-start] 4fr [row-2-end row-3-start] 1fr [row-3-end row-end];
+}
+
+.tarjeta__elemento {
+  background: #fff;
+  min-height: 100%;
+  overflow: hidden;
+  padding: 2em;
+  align-items: center;
+  box-shadow: 0 0 32px -16px rgba(0, 0, 0, 0.5);
+  border-radius: 3%;
+  margin-right: 60px;
+}
+
+.tar1 {
+  grid-column: col-start/col-1-end;
+  grid-row: row;
+}
+.tar1 > .tarjeta__figure > .tarjeta__img {
+  grid-column: col-start/col-1-end;
+  grid-row: row-1-start/row-1-end;
+}
+.tar1 > .tarjeta__texto {
+  grid-column: col-start/col-1-end;
+  grid-row: row-2-start/row-2-end;
+}
+.tar1 > .btn-continuar {
+  grid-column: col-start/col-1-end;
+  grid-row: row-3-start/row-3-end;
+}
+
+.tar2 {
+  grid-column: col-2-start/col-2-end;
+  grid-row: row;
+}
+
+.tar3 {
+  grid-column: col-3-start/col-3-end;
+  grid-row: row;
+}
+
+.tarjeta__figure {
+  height: 50%;
+}
+
+.tarjeta__img {
+  width: 90%;
+  height: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+.tarjeta__parrafo {
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+.btn-continuar {
+  display: inline-block;
+  background: #1E8449;
+  padding: 15px 30px;
+  margin-top: 1em;
+  text-decoration: none;
+  color: #fff;
+  margin-top: auto;
+}
+
+.tarjeta__texto h2 {
+  text-align: center;
+  color: #1E8449;
+}
+
+/*# sourceMappingURL=estilos.css.map */

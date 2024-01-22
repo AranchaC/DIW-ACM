@@ -23,12 +23,13 @@
 .galeria__titulo{
     font-size: 2rem;
     margin-bottom: 1em;
-    grid-column: col-start / col-end;
+    grid-column: col-start / col-2-end;
 }
 
 .galeria__picture{
     min-width: 200px;    
     //flex-basis: 350px;
+    height: 100%;
 }
 
 .galeria__img{
@@ -36,6 +37,8 @@
     max-height: 100%;
     //margin: 15px;
     object-fit: cover;
+    height: 100%;
+    padding: 10px;
 }
 
 .img1 {
