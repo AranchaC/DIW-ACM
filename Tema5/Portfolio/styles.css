@@ -1,0 +1,143 @@
+/****
+STYLES GUIDE:
+0. RESET
+1. LAYOUT
+2. GENERIC ITEMS
+3. LIST
+4. FORM
+5. MEDIAQUERY
+-----------------
+*/
+
+
+/* -------- 0. RESET -------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* { box-sizing:border-box;}
+
+
+/* -------- 1. LAYOUT -------- */
+body { text-align: center; font: 14px/1 'Roboto'; background: #f5f5f5;}
+.wrapper { width: 900px; margin: 30px auto; text-align: left;}
+
+.flex { display: flex;}
+
+.navbar { justify-content:space-between;}
+	.navbar nav { align-items:flex-end;}
+
+.content .item { display: flex; align-items:center; justify-content: center; flex:1; background: #ccc; height: 350px; padding: 20px;}
+	
+	.content .about .item.title, .content .portfolio .item.title { justify-content: flex-start;} 
+	.content .creation .item.title { justify-content: flex-end;}
+
+/* -------- 2. GENERIC ITEMS -------- */
+	.navbar { margin-left: 10px;}
+		.navbar a { display: inline-block; margin-right: 1px; padding: 15px 15px 5px 15px; font-size: 16px; font-weight: 700; text-transform: uppercase; color: #000; text-decoration: none; font-family: 'Roboto Condensed';}
+			.navbar a:nth-child(1) { border-bottom: 4px solid #da0033;}
+			.navbar a:nth-child(2) { border-bottom: 4px solid #02745b;}
+			.navbar a:nth-child(3) { border-bottom: 4px solid #3d0274;}
+			.navbar a:nth-child(4) { border-bottom: 4px solid #742502;}
+
+		.navbar h1 { font-weight: 500; font-size: 25px; text-align: right;}
+			.navbar span {display: block; font-size: 40px; font-weight: 700;}
+
+	.title { font:300 55px 'Roboto Condensed'; text-transform: uppercase;}
+	.description { font-size: 16px; font-weight: 300; line-height: 1.3;}
+	.description .number { font-weight: 700; font-size: 30px; color: rgba(0,0,0,.3);}
+	.description .subtitle { font-size: 24px; margin-bottom: 10px;}
+
+	.about { color: #fff;}
+		.about .photo { background: #fff;}
+		.about .description { background: #aa042b; display: flex; flex-flow:column nowrap; align-items:flex-start;}
+		.about .title { background: #da0033;}
+
+	.creation { color: #333;}
+		.creation .image { background: #fff;}
+		.creation .description { background: #f2f2f2; display: flex; flex-flow:column nowrap; align-items:flex-start;}
+		.creation .title { background: #02745b; color:#fff;}
+
+	.portfolio { color: #333;}
+		.portfolio .description { background: #f2f2f2; border:20px solid #fff; display: flex; flex-flow:column nowrap; align-items:flex-start; flex:1 65.7%;}
+		.portfolio .title { background: #3d0274; color:#fff; flex:1 auto;}
+
+	.contact { color: #fff;}
+		.contact .form { background: #742502;}
+		.contact .description { background: #742502; display: flex; flex-flow:column nowrap; align-items:flex-start;}
+		.contact .title { background: #521900;}
+
+/* -------- 3. LIST -------- */
+
+	.portfolio li { padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #ddd;}
+	.portfolio a { color: #008bda; text-decoration: none;}
+
+/* -------- 4. FORM -------- */
+
+	.contact form { display: flex; flex-flow:column nowrap; align-items:flex-end;}
+	.contact input { border: 0; background: #fff; display: block; width: 200px; height: 30px; padding-left:10px; margin-bottom: 10px; }
+		.contact [type=submit] { width: auto; height: auto; padding: 5px 15px; border: 2px solid #fff; background: none; color: #fff; font-size: 16px;}
+
+/* -------- 5. MEDIAQUERY -------- */
+
+@media screen and (max-width: 780px) {
+	.flex {}
+		.item {}
+}
+
+@media screen and (max-width: 600px) {
+	.flex {}
+		.item {}
+}
+
+@media screen and (max-width: 360px) {
+	.flex {}
+		.item {}
+}
+

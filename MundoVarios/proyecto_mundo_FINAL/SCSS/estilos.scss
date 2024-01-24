@@ -1,0 +1,151 @@
+//sass --watch SCSS/estilos.scss CSS/estilos.css
+
+//Móvil
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-2);
+  color: white;
+}
+
+$colores-clarosA : (
+  #0FF5B3,
+  #0FA1F5,
+  #0EEBF5,
+  #0FF565, 
+  #0F58F5,
+  black
+);
+
+$colores-oscurosA : (
+  #007655,
+  #005e94,
+  #009ca4,
+  #008c33, 
+  #011e5e,
+  white
+);
+
+:root {
+  .tema-claro{
+    --color-1: #{nth($colores-clarosA,1)};
+    --color-2: #{nth($colores-clarosA,2)};
+    --color-3: #{nth($colores-clarosA,3)};
+    --color-4: #{nth($colores-clarosA,4)};
+    --color-5: #{nth($colores-clarosA,5)};
+    --color-6: #{nth($colores-clarosA,6)};
+  }
+  .tema-oscuro{
+    --color-1:  #{nth($colores-oscurosA,1)};
+    --color-2:  #{nth($colores-oscurosA,2)};
+    --color-3:  #{nth($colores-oscurosA,3)};
+    --color-4:  #{nth($colores-oscurosA,4)};
+    --color-5:  #{nth($colores-oscurosA,5)};
+    --color-6:  #{nth($colores-oscurosA,6)};
+  }
+} 
+
+//Tablet
+@media screen and (min-width: 640px) {
+  
+  $colores-clarosr : (
+    #615E6F,
+    #231B22,
+    #728486,
+    #0C2200, 
+    #7C8186,
+    black
+  );
+
+  $colores-oscurosr : (
+    #173A3C,
+    #030303,
+    #011F41,
+    #0F1027,
+    #425354,
+    white
+  );
+
+  :root {
+    .tema-claro{
+      --color-1: #{nth($colores-clarosr,1)};
+      --color-2: #{nth($colores-clarosr,2)};
+      --color-3: #{nth($colores-clarosr,3)};
+      --color-4: #{nth($colores-clarosr,4)};
+      --color-5: #{nth($colores-clarosr,5)};
+      --color-6: #{nth($colores-clarosr,6)};
+    }
+    .tema-oscuro{
+      --color-1:  #{nth($colores-oscurosr,1)};
+      --color-2:  #{nth($colores-oscurosr,2)};
+      --color-3:  #{nth($colores-oscurosr,3)};
+      --color-4:  #{nth($colores-oscurosr,4)};
+      --color-5:  #{nth($colores-oscurosr,5)};
+      --color-6:  #{nth($colores-oscurosr,6)};
+    } 
+    body{
+      background-color:  var(--color-2);
+    }
+  } 
+}
+
+//Luis
+@media screen and (min-width: 890px){
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    height: 1450px;
+  }
+
+  $colores-claros : (  
+    #4eda84,
+    #24b75d,
+    #24b75d,
+    #19a04e, 
+    #187d40
+  );
+
+  $colores-oscuros : (
+    #19a04e,
+    #187d40,
+    #186335,
+    #16512e,
+    #062d17
+  );
+
+  :root {
+    .tema-claro{
+      --color-1: #{nth($colores-claros,1)};
+      --color-2: #{nth($colores-claros,1)};
+      --color-3: #{nth($colores-claros,1)};
+      --color-4: #{nth($colores-claros,1)};
+      --color-5: #{nth($colores-claros,5)};
+    }
+    .tema-oscuro{
+      --color-1:  #{nth($colores-oscuros,1)};
+      --color-2:  #{nth($colores-oscuros,2)};
+      --color-3:  #{nth($colores-oscuros,3)};
+      --color-4:  #{nth($colores-oscuros,4)};
+      --color-5:  #{nth($colores-oscuros,5)};
+    }
+  } 
+}
+
+@import "Partials/header";
+@import "Partials/main";
+@import "Partials/container";
+@import "Partials/footer";
+@import "Partials/boton";
+@import "Partials/artDirector";
+@import "Partials/tabla";
+@import "Partials/video";

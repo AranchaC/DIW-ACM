@@ -1,0 +1,88 @@
+.tabla {  
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 100px;
+  width: 90%;
+  padding: 30px 0;
+  margin: 1rem auto 5vh ;
+  overflow-x:auto;
+  background-color: var(--color-3);
+  color: black;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#thMoneda, #tdMoneda, 
+#thFlor, #tdFlor, 
+#thComida, #tdComida,
+#thAnimal, #tdAnimal {
+  display: none;
+}
+
+@media screen and (min-width: 640px) {
+
+  .tabla {
+    margin-bottom: 7vh;
+  }
+
+  #thComida, #tdComida,
+  #thAnimal, #tdAnimal{
+    display: table-cell;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: var(--color-6);
+    background-color: var(--color-2);
+    & th {
+      color: black;
+    } 
+    & td {
+      color: white;
+    }
+  }
+}
+//Escritorio
+@media screen and (min-width: 890px) {
+  #thMoneda, #tdMoneda, 
+  #thFlor, #tdFlor, 
+  #thComida, #tdComida,
+  #thAnimal, #tdAnimal{
+    display: table-cell;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 4px solid maroon;
+    & th {
+      color:yellow ;
+      text-align: center;
+      background-color:  maroon;
+    }
+
+    & td {
+      color: white;
+      text-align: center;
+      background-color:  var(--color-4);
+    }
+  }
+}
