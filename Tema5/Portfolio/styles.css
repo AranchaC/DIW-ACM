@@ -68,12 +68,36 @@ table {
 body { text-align: center; font: 14px/1 'Roboto'; background: #f5f5f5;}
 .wrapper { width: 900px; margin: 30px auto; text-align: left;}
 
-.flex { display: flex;}
+
+/* ***** GRID ***** */
+.wrapper { 
+	display: grid;
+	/* 5 col / 5 row */
+	grid-template-columns: 
+    [col-start col-1-start] 3fr 
+    [col-1-end col-2-start] 1fr 
+    [col-2-end col-3-start] 1fr
+    [col-3-end col-4-start] 1fr
+	[col-4-end col-5-start] 3fr
+    [col-5-end col-end];
+	grid-template-rows: 
+	[row-start row-1-start] 1fr 
+    [row-1-end row-2-start] 4fr 
+    [row-2-end row-3-start] 4fr
+    [row-3-end row-4-start] 4fr
+	[row-4-end row-5-start] 4fr
+    [row-5-end row-end];
+
+}
 
 .navbar { justify-content:space-between;}
-	.navbar nav { align-items:flex-end;}
+	.navbar nav { 
+		align-items:flex-end;
+		grid-column: col-1-start / col-2-end;
+		grid-row: row-1-start / row-1-end;
+	}
 
-.content .item { display: flex; align-items:center; justify-content: center; flex:1; background: #ccc; height: 350px; padding: 20px;}
+/* .content .item { display: flex; align-items:center; justify-content: center; flex:1; background: #ccc; height: 350px; padding: 20px;} */
 	
 	.content .about .item.title, .content .portfolio .item.title { justify-content: flex-start;} 
 	.content .creation .item.title { justify-content: flex-end;}
@@ -86,7 +110,11 @@ body { text-align: center; font: 14px/1 'Roboto'; background: #f5f5f5;}
 			.navbar a:nth-child(3) { border-bottom: 4px solid #3d0274;}
 			.navbar a:nth-child(4) { border-bottom: 4px solid #742502;}
 
-		.navbar h1 { font-weight: 500; font-size: 25px; text-align: right;}
+		.navbar h1 { 
+			font-weight: 500; font-size: 25px; text-align: right;
+			grid-column: col-5-start / col-5-end;
+			grid-row: row-1-start / row-1end;
+		}
 			.navbar span {display: block; font-size: 40px; font-weight: 700;}
 
 	.title { font:300 55px 'Roboto Condensed'; text-transform: uppercase;}
@@ -94,23 +122,30 @@ body { text-align: center; font: 14px/1 'Roboto'; background: #f5f5f5;}
 	.description .number { font-weight: 700; font-size: 30px; color: rgba(0,0,0,.3);}
 	.description .subtitle { font-size: 24px; margin-bottom: 10px;}
 
-	.about { color: #fff;}
-		.about .photo { background: #fff;}
-		.about .description { background: #aa042b; display: flex; flex-flow:column nowrap; align-items:flex-start;}
+	.about { color: #fff;
+		/* grid-column: col-start / col-end;
+		grid-row: row-2-start / row-2-end; */
+	}
+		.about .photo { 
+			background: #fff;
+			grid-column: col-1-start / col-1-end;
+			grid-row: row-2-start / row-2-end;
+		}
+		.about .description { background: #aa042b; flex-flow:column nowrap; align-items:flex-start;}
 		.about .title { background: #da0033;}
 
 	.creation { color: #333;}
 		.creation .image { background: #fff;}
-		.creation .description { background: #f2f2f2; display: flex; flex-flow:column nowrap; align-items:flex-start;}
+		.creation .description { background: #f2f2f2; flex-flow:column nowrap; align-items:flex-start;}
 		.creation .title { background: #02745b; color:#fff;}
 
 	.portfolio { color: #333;}
-		.portfolio .description { background: #f2f2f2; border:20px solid #fff; display: flex; flex-flow:column nowrap; align-items:flex-start; flex:1 65.7%;}
+		.portfolio .description { background: #f2f2f2; border:20px solid #fff; flex-flow:column nowrap; align-items:flex-start; flex:1 65.7%;}
 		.portfolio .title { background: #3d0274; color:#fff; flex:1 auto;}
 
 	.contact { color: #fff;}
 		.contact .form { background: #742502;}
-		.contact .description { background: #742502; display: flex; flex-flow:column nowrap; align-items:flex-start;}
+		.contact .description { background: #742502; flex-flow:column nowrap; align-items:flex-start;}
 		.contact .title { background: #521900;}
 
 /* -------- 3. LIST -------- */
@@ -120,7 +155,7 @@ body { text-align: center; font: 14px/1 'Roboto'; background: #f5f5f5;}
 
 /* -------- 4. FORM -------- */
 
-	.contact form { display: flex; flex-flow:column nowrap; align-items:flex-end;}
+	.contact form {  flex-flow:column nowrap; align-items:flex-end;}
 	.contact input { border: 0; background: #fff; display: block; width: 200px; height: 30px; padding-left:10px; margin-bottom: 10px; }
 		.contact [type=submit] { width: auto; height: auto; padding: 5px 15px; border: 2px solid #fff; background: none; color: #fff; font-size: 16px;}
 
