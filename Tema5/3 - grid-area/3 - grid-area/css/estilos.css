@@ -1,0 +1,92 @@
+body {
+  background: #223;
+}
+
+.contenedor {
+  background: grey;
+  /* min-height: 600px; */
+  /* padding: 20px;    */
+  min-height: 600px;
+  border: 5px solid black;
+
+  /* 4colmunas y 3 filas */
+   /* 600px 2columnas y 2 filas */
+
+  display: grid;
+  grid-template-columns: [col-start col-mid-1-start] 1fr [col-mid-1-end col-mid-2-start] 1fr [col-mid-2-end col-mid-3-start] 1fr [col-mid-3-end col-mid-4-start] 1fr [col-mid-4-end col-end];
+  grid-template-rows: [row-start row-mid-1-start] 1fr [row-mid-1-end row-mid-2-start] 1fr [row-mid-2-end row-mid-3-start] 1fr [row-mid-3-end row-end];
+  
+  /* gap: 5%; */
+  
+}
+
+div img{
+  max-width: 100%;
+  width: 100%;
+  /* min-width: 300px; */
+  height: 100%;
+}
+.padreVideo{
+  /* grid-area: fila/columna/fila/columna; */
+  grid-area: row-mid-2-start/col-mid-1-start/row-mid-2-end/col-mid-2-end;
+
+  width: 70%;
+}
+
+
+/* .chica{
+  max-width: 100%;
+  grid-area: row-mid-2-start/col-mid-1-start/row-mid-2-end/col-mid-2-end;
+} */
+
+video{
+  max-width: 100%;
+  min-width: 80%;
+}
+
+h1{
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+}
+
+@media screen and (max-width:768px) {
+  .contenedor{ 
+    grid-template-columns: [col-start col-mid-1-start] 1fr [col-mid-1-end col-mid-2-start] 1fr [col-mid-2-end col-mid-3-start];
+    grid-template-rows: [row-start row-mid-1-start] 1fr [row-mid-1-end row-mid-2-start] 1fr [row-mid-2-end row-end];  
+  }
+
+  .desaparece{
+    display: none;
+  }
+}
+
+.scroll{
+  width: 100%;
+  /* overflow-x: auto; */
+}
+
+table{
+  background-color: aqua;
+  width: 100%;
+  
+  margin: auto;
+  width: 100%;
+}
+
+.header {
+  background: indigo;  
+}
+
+.sidebar {
+  background: black;    
+  
+}
+
+.content {
+  background: orangered;
+}
+
+ .footer {
+  background: royalblue;  
+} 

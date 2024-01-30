@@ -8,26 +8,31 @@
     display: grid;
     //3 col // 2 row
     grid-template-columns: 
-    [col-start col-1-start] 2fr 
-    [col-1-end col-2-start] 1fr 
-    [col-2-end col-3-start] 1fr
-    [col-3-end col-4-start] 2fr
-    [col-4-end col-end];
+    [col-start] 1fr 
+    [col-end];
     grid-template-rows: 
     [row-start row-1-start] 1fr 
     [row-1-end row-2-start] 3fr 
     [row-2-end row-3-start] 3fr
-    [row-3-end row-end];
+    [row-3-end row-4-start] 3fr
+    [row-4-end row-5-start] 3fr
+    [row-5-end row-6-start] 3fr
+    [row-6-end row-7-start] 3fr
+    [row-7-end row-end];
 }
 
 .galeria__titulo{
-    font-size: 2rem;
+    //font-size: 2rem;
+    font-size: 3vw;
+    padding-top: 55px;
     margin-bottom: 1em;
-    grid-column: col-start / col-2-end;
+   // grid-column: col-start / col-end;
+   grid-column: col;
+
 }
 
 .galeria__picture{
-    min-width: 200px;    
+    min-width: 50px;    
     //flex-basis: 350px;
     height: 100%;
 }
@@ -42,38 +47,139 @@
 }
 
 .img1 {
-    grid-column: col-1-start / col-1-end;
-    grid-row: row-2-start / row-2-end;
+   // grid-row: row-2-start / row-2-end;
+    grid-row: row-2;
     margin: 5px;
 }
 
 .img2 {
-    grid-column: col-2-start / col-3-end;
-    grid-row: row-2-start / row-2-end;
+    //grid-row: row-3-start / row-3-end;
+    grid-row: row-3;
     margin: 5px;
 }
 
 .img3 {
-    grid-column: col-3-end / col-4-end;
-    grid-row: row-2-start / row-2-end;
+    //grid-row: row-4-start / row-4-end;
+    grid-row: row-4;
     margin: 5px;
 }
 
 .img4 {
-    grid-column: col-1-start / col-1-end;
-    grid-row: row-3-start / row-3-end;
+    grid-row: row-5-start / row-5-end;
     margin: 5px;
 }
 
 .img5 {
-    grid-column: col-2-start / col-3-end;
-    grid-row: row-3-start / row-3-end;
+    //grid-row: row-6-start / row-6-end;
+    grid-row: row-6;
+
     margin: 5px;
 }
 
 .img6 {
-    grid-column: col-3-end / col-4-end;
-    grid-row: row-3-start / row-3-end;
+    //grid-row: row-7-start / row-7-end;
+    grid-row: row-7;
     margin: 5px;
+}
 
+@media screen and (min-width: 640px) {
+    .galeria{
+        grid-template-columns: 
+        [col-start col-1-start] 1fr 
+        [col-1-end col-2-start] 1fr
+        [col-2-end col-end];
+        grid-template-rows: 
+        [row-start row-1-start] 1fr 
+        [row-1-end row-2-start] 4fr 
+        [row-2-end row-3-start] 4fr
+        [row-3-end row-4-start] 4fr
+        [row-4-end row-end];
+    }
+    
+    .galeria__titulo{
+        grid-column: col-start / col-end;
+
+    }
+    
+    .img1 {
+        grid-area: row-2-start / col-1-start / row-2-end / col-1-end;
+      /*  grid-column: col-1-start / col-1-end;
+        grid-row: row-2-start / row-2-end; */
+    }
+    
+    .img2 {
+        grid-column: col-2-start / col-2-end;
+        grid-row: row-2-start / row-2-end;
+    }
+    
+    .img3 {
+        grid-column: col-1-start / col-1-end;
+        grid-row: row-3-start / row-3-end;
+    }
+    
+    .img4 {
+        grid-column: col-2-start / col-2-end;
+        grid-row: row-3-start / row-3-end;
+    }
+    
+    .img5 {
+        grid-column: col-1-start / col-1-end;
+        grid-row: row-4-start / row-4-end;
+    }
+    
+    .img6 {
+        grid-column: col-2-start / col-2-end;
+        grid-row: row-4-start / row-4-end;
+
+    }
+}
+
+@media screen and (min-width: 890px) {
+    .galeria{
+        grid-template-columns: 
+        [col-start col-1-start] 2fr 
+        [col-1-end col-2-start] 1fr 
+        [col-2-end col-3-start] 1fr
+        [col-3-end col-4-start] 2fr
+        [col-4-end col-end];
+        grid-template-rows: 
+        [row-start row-1-start] 1fr 
+        [row-1-end row-2-start] 3fr 
+        [row-2-end row-3-start] 3fr
+        [row-3-end row-end];
+    }
+    
+    .galeria__titulo{
+        grid-column: col-start / col-2-end;
+    }
+    
+    .img1 {
+        grid-column: col-1-start / col-1-end;
+        grid-row: row-2-start / row-2-end;
+    }
+    
+    .img2 {
+        grid-column: col-2-start / col-3-end;
+        grid-row: row-2-start / row-2-end;
+    }
+    
+    .img3 {
+        grid-column: col-3-end / col-4-end;
+        grid-row: row-2-start / row-2-end;
+    }
+    
+    .img4 {
+        grid-column: col-1-start / col-1-end;
+        grid-row: row-3-start / row-3-end;
+    }
+    
+    .img5 {
+        grid-column: col-2-start / col-3-end;
+        grid-row: row-3-start / row-3-end;
+    }
+    
+    .img6 {
+        grid-column: col-3-end / col-4-end;
+        grid-row: row-3-start / row-3-end;
+    }
 }

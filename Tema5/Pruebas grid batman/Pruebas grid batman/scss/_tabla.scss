@@ -1,0 +1,36 @@
+/** Tablas Responsivas */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+  
+    th, td {
+      border: 1px solid #c22d2d;
+      padding: 8px;
+      text-align: left;
+      text-align: center;
+      font-size: 2vw;
+      color: yellow;
+    }
+  
+    th {
+     
+      text-align: center;
+    }
+  
+    #desaparece {
+      display: none;
+    }
+  
+    /** Media Query */
+    @media (min-width: 576px) {
+      table {
+        border-collapse: collapse;
+      }
+  
+      #desaparece {
+        display: table-cell;
+      }
+    }
+  }
+  

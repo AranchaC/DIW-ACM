@@ -1,0 +1,65 @@
+@mixin yellowBorderAndRadius($border-width, $border-radius) {
+    border: $border-width solid yellow;
+    border-radius: $border-radius;
+  }
+
+
+  #idContenedorFamilia {
+    display: grid;
+    grid-template-columns:
+      [col-start] 1fr
+      [col-start-end col-mid-2-start] 2fr
+      [col-mid-2-end col-end-start] 1fr
+      [col-end-end];
+    grid-template-rows:
+      [row-start] 1fr
+      [row-start-end row-end-start] 1fr
+      [row-end-end];
+  
+    @include yellowBorderAndRadius(5px, 15px);
+  }
+  
+  #idContenedorFamilia div {
+    width: 200px;
+    height: 200px;
+  
+    @include yellowBorderAndRadius(3px, 10px); 
+  }
+  
+  #idContenedorFamilia div img {
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+    
+  }
+
+  #idContenedorFamilia :nth-child(1) {
+    grid-area: row-start / col-start / row-start-end / col-mid-2-start;
+    margin: auto;
+  }
+  
+  #idContenedorFamilia :nth-child(2) {
+    grid-area: row-start / col-mid-2-start / row-start-end / col-mid-2-end;
+    margin: auto;
+  }
+  
+  #idContenedorFamilia :nth-child(3) {
+    grid-area: row-start / col-mid-2-end / row-start-end / col-end-end;
+    margin: auto;
+  }
+  
+  #idContenedorFamilia :nth-child(4) {
+    grid-area: row-start-end / col-start / row-end-start / col-mid-2-start;
+    margin: auto;
+  }
+  
+  #idContenedorFamilia :nth-child(5) {
+    grid-area: row-end-start / col-mid-2-start / row-end-end / col-mid-2-end;
+    margin: auto;
+  }
+  
+  #idContenedorFamilia :nth-child(6) {
+    grid-area: row-end-start / col-end-start / row-end-end / col-end-end;
+    margin: auto;
+  }
+  

@@ -1,0 +1,262 @@
+@charset "UTF-8";
+header {
+  display: grid;
+  grid-template-columns: [col-start] 1fr [col-start-end col-end-start] 1fr [col-end];
+  grid-template-rows: [row-start] auto [row-end] auto; /* Agregué otra fila */
+}
+
+#logo-container {
+  width: 200px;
+  grid-column: col-start/col-end;
+  grid-row: row;
+  margin: auto;
+}
+#logo-container img {
+  max-width: 100%;
+}
+
+nav {
+  grid-column: col-start/col-end; /* Ocupa todo el ancho de la cuadrícula */
+  grid-row: row 2; /* La segunda fila */
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav ul li a {
+  color: yellow;
+  font-family: "batman", sans-serif;
+  font-size: 2vw;
+  text-transform: uppercase;
+}
+
+#idContenedorVillanos {
+  display: grid;
+  grid-template-columns: [col-start] 1fr [col-start-end col-mid-1-start] 1fr [col-mid-1-end col-mid-2-start] 1fr [col-mid-2-end col-end-start] 1fr [col-end-end];
+  grid-template-rows: [row-start] 1fr [row-start-end row-end-start] 1fr [row-end-end];
+  border: 5px solid yellow;
+  border-radius: 15px;
+}
+#idContenedorVillanos #idContenedorVillanos div {
+  width: 200px;
+  min-height: 200px;
+  border: 3px solid yellow;
+  border-radius: 10px;
+}
+#idContenedorVillanos #idContenedorVillanos div img {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+#idContenedorVillanos #idContenedorVillanos :nth-child(1) {
+  grid-column: col-start;
+  grid-row: row-start;
+}
+#idContenedorVillanos #idContenedorVillanos :nth-child(2) {
+  grid-column: col-mid-1;
+  grid-row: row-start;
+}
+#idContenedorVillanos #idContenedorVillanos :nth-child(3) {
+  grid-column: col-mid-2;
+  grid-row: row-start;
+}
+#idContenedorVillanos #idContenedorVillanos :nth-child(4) {
+  grid-column: col-end;
+  grid-row: row-start;
+}
+#idContenedorVillanos #idContenedorVillanos :nth-child(5) {
+  grid-column: col-start;
+  grid-row: row-end;
+}
+#idContenedorVillanos #idContenedorVillanos :nth-child(6) {
+  grid-column: col-mid-1;
+  grid-row: row-end;
+}
+#idContenedorVillanos #idContenedorVillanos :nth-child(7) {
+  grid-column: col-mid-2;
+  grid-row: row-end;
+}
+#idContenedorVillanos #idContenedorVillanos :nth-child(8) {
+  grid-column: col-end;
+  grid-row: row-end;
+}
+
+#idContenedorFamilia {
+  display: grid;
+  grid-template-columns: [col-start] 1fr [col-start-end col-mid-2-start] 2fr [col-mid-2-end col-end-start] 1fr [col-end-end];
+  grid-template-rows: [row-start] 1fr [row-start-end row-end-start] 1fr [row-end-end];
+  border: 5px solid yellow;
+  border-radius: 15px;
+}
+
+#idContenedorFamilia div {
+  width: 200px;
+  height: 200px;
+  border: 3px solid yellow;
+  border-radius: 10px;
+}
+
+#idContenedorFamilia div img {
+  max-width: 100%;
+  min-width: 100%;
+  height: 100%;
+}
+
+#idContenedorFamilia :nth-child(1) {
+  grid-area: row-start/col-start/row-start-end/col-mid-2-start;
+  margin: auto;
+}
+
+#idContenedorFamilia :nth-child(2) {
+  grid-area: row-start/col-mid-2-start/row-start-end/col-mid-2-end;
+  margin: auto;
+}
+
+#idContenedorFamilia :nth-child(3) {
+  grid-area: row-start/col-mid-2-end/row-start-end/col-end-end;
+  margin: auto;
+}
+
+#idContenedorFamilia :nth-child(4) {
+  grid-area: row-start-end/col-start/row-end-start/col-mid-2-start;
+  margin: auto;
+}
+
+#idContenedorFamilia :nth-child(5) {
+  grid-area: row-end-start/col-mid-2-start/row-end-end/col-mid-2-end;
+  margin: auto;
+}
+
+#idContenedorFamilia :nth-child(6) {
+  grid-area: row-end-start/col-end-start/row-end-end/col-end-end;
+  margin: auto;
+}
+
+#idContenedorComic {
+  display: grid;
+  grid-template-columns: [col-start col-mid-1-start] 1fr [col-mid-1-end col-mid-2-start] 1fr [col-mid-2-end col-end-start] 1fr [col-end-end];
+  grid-template-rows: [row-start] 1fr [row-start-end row-end-start] 1fr [row-end-end];
+  border: 5px solid yellow;
+  border-radius: 15px;
+}
+
+#idContenedorComic div {
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  border: 5px solid yellow;
+  border-radius: 15px;
+}
+
+#idContenedorComic div img {
+  max-width: 100%;
+  min-width: 100%;
+  height: 100%;
+}
+
+#idContenedorComic :nth-child(1) {
+  grid-column: col-mid-1;
+  grid-row: row-start;
+}
+
+#idContenedorComic :nth-child(2) {
+  grid-column: col-mid-2;
+  grid-row: row-start;
+}
+
+#idContenedorComic :nth-child(3) {
+  grid-column: col-end;
+  grid-row: row-start;
+}
+
+#idContenedorComic :nth-child(4) {
+  grid-column: col-mid-1;
+  grid-row: row-end;
+}
+
+#idContenedorComic :nth-child(5) {
+  grid-column: col-mid-2;
+  grid-row: row-end;
+}
+
+#idContenedorComic :nth-child(6) {
+  grid-column: col-end;
+  grid-row: row-end;
+}
+
+/** Tablas Responsivas */
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  /** Media Query */
+}
+table th, table td {
+  border: 1px solid #c22d2d;
+  padding: 8px;
+  text-align: left;
+  text-align: center;
+  font-size: 2vw;
+  color: yellow;
+}
+table th {
+  text-align: center;
+}
+table #desaparece {
+  display: none;
+}
+@media (min-width: 576px) {
+  table table {
+    border-collapse: collapse;
+  }
+  table #desaparece {
+    display: table-cell;
+  }
+}
+
+@font-face {
+  font-family: batman;
+  src: url(/fuentes/batman.otf);
+}
+body {
+  background-color: black;
+}
+
+h1, h2, h3 {
+  color: yellow;
+  font-family: "batman", sans-serif;
+  font-size: 4vw;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/** Art Director
+*/
+#idContenedorArtDirector {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+#idContenedorArtDirector picture {
+  width: 500px;
+}
+#idContenedorArtDirector picture img {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+Video Responsivo*/
+video {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=estilos.css.map */

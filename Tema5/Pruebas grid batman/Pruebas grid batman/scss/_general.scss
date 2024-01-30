@@ -1,0 +1,58 @@
+@import "./_header.scss";
+@import "./_villanos.scss";
+@import "./_familia.scss";
+@import "./_comic.scss";
+@import "./_tabla.scss";
+
+@font-face {
+   font-family: batman;
+   src: url(/fuentes/batman.otf);
+}
+
+
+body{
+background-color: black;
+}
+
+h1,h2,h3{
+   color: yellow;
+   font-family: 'batman', sans-serif;
+   font-size: 4vw;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+      
+
+
+
+/** Art Director
+*/
+
+#idContenedorArtDirector {
+   display: grid;
+   place-items: center;
+   height: 100vh;
+ 
+   picture {
+     width: 500px;
+ 
+     img {
+       max-width: 100%;
+       height: auto;
+     }
+   }
+ }
+ 
+ /**
+ Video Responsivo*/
+
+
+
+ video{
+   max-width: 100%;
+   height: auto;
+   margin: 0 auto;
+ }
+ 
+

@@ -1,0 +1,74 @@
+@mixin yellowBorderAndRadius($border-width, $border-radius) {
+    border: $border-width solid yellow;
+    border-radius: $border-radius;
+  }
+
+
+#idContenedorVillanos {
+    display: grid;
+    grid-template-columns:
+      [col-start] 1fr
+      [col-start-end col-mid-1-start] 1fr
+      [col-mid-1-end col-mid-2-start] 1fr
+      [col-mid-2-end col-end-start] 1fr
+      [col-end-end];
+    grid-template-rows:
+      [row-start] 1fr
+      [row-start-end row-end-start] 1fr
+      [row-end-end];
+      @include yellowBorderAndRadius(5px, 15px);
+  
+  #idContenedorVillanos div {
+    width: 200px;
+    min-height: 200px;
+    @include yellowBorderAndRadius(3px, 10px);
+  }
+  
+  #idContenedorVillanos div img {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    
+  }
+  
+  #idContenedorVillanos :nth-child(1) {
+    grid-column: col-start;
+    grid-row: row-start;
+  
+  }
+  
+  #idContenedorVillanos :nth-child(2) {
+    grid-column: col-mid-1;
+    grid-row: row-start;
+  }
+  
+  #idContenedorVillanos :nth-child(3) {
+    grid-column: col-mid-2;
+    grid-row: row-start;
+  }
+  
+  #idContenedorVillanos :nth-child(4) {
+    grid-column: col-end;
+    grid-row: row-start;
+  }
+  
+  #idContenedorVillanos :nth-child(5) {
+    grid-column: col-start;
+    grid-row: row-end;
+  }
+  
+  #idContenedorVillanos :nth-child(6) {
+    grid-column: col-mid-1;
+    grid-row: row-end;
+  }
+  
+  #idContenedorVillanos :nth-child(7) {
+    grid-column: col-mid-2;
+    grid-row: row-end;
+  }
+  
+  #idContenedorVillanos :nth-child(8) {
+    grid-column: col-end;
+    grid-row: row-end;
+  }
+}
