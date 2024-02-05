@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+  width: 80%;
+}
+
+.container img {
+  border: 5px solid black;
+  width: 15%;
+}
+
+/* Estilos para rotar las imágenes */
+.container img:nth-child(1){
+  /* transform: rotate(45deg); .
+  transform: scale(2,2); */
+}
+.container img:nth-child(2){
+  /* transform: rotate(30deg); 
+  transform: scaleX(0.5); */
+}
+.container img:nth-child(3){
+  /* transform: rotate(-20deg); 
+  transform: scaleY(1.5);*/
+
+}
+.container img:nth-child(4){
+  /* transform: rotate(-50deg); 
+  transform: scale(2, 1.5);*/
+}
+
+
+/* Estilos para desplazar las imágenes */
+
+
+/* Estilos para el sesgado */
+
+
+/* Trasformaciones combinadas */
+
+
+/* Modificando el origen de la rotación */
+
