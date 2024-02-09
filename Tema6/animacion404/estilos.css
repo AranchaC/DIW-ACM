@@ -69,7 +69,14 @@ body {
     text-align: center; /* Alinea el texto al centro */
     font-size: 24px; /* Tamaño de fuente */
     font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente más graciosa */
-    color: #69bcff; /* Color del texto rosa */
+    color: #FF69B4; /* Color del texto rosa */
     z-index: 2; /* Asegura que esté sobre las imágenes */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra al texto para efecto */
+    animation: cambioColor 5s infinite alternate; /* Animación de cambio de color */
+}
+
+@keyframes cambioColor {
+    0% { color: #FF69B4; } /* Rosa */
+    50% { color: #00FFFF; } /* Cyan */
+    100% { color: #FF69B4; } /* Rosa */
 }
