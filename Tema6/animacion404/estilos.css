@@ -1,45 +1,73 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
     overflow: hidden; /* Para evitar barras de desplazamiento */
     position: relative;
     height: 100vh; /* Establecer altura total del viewport */
+    background-image: url(./img/fondo1.jpg);
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el cuerpo */
+    background-position: center; /* Centra la imagen de fondo */
 }
 
 
 .avion {
     position: absolute;
-    top: 100px; /* Posición inicial en la parte superior */
-    left: -350px; /* Posición inicial fuera de la pantalla */
+    top: 20px; /* Posición inicial en la parte superior */
+    left: -10px; /* Posición inicial fuera de la pantalla */
     width: 350px;
-    animation: volar 20s linear infinite; /* Animación de vuelo */
+    animation: volar 15s linear infinite; /* Animación de vuelo */
     z-index: 1;
+    animation-delay: -5s; /* Ajustar el retraso inicial */
 }
 
 @keyframes volar {
-    0% { transform: translateX(calc(100vw + 350px)); } /* Cambia de -200px a 100vw + 350px */
-    100% { transform: translateX(-350px); } /* Cambia de 100vw + 200px a -200px */
+    0% { 
+        transform: translateX(calc(100vw + 350px)); 
+    } /* Cambia de -200px a 100vw + 350px */
+    100% { 
+        transform: translateX(-100px); 
+    } /* Cambia de 100vw + 200px a -200px */
 }
 
 .caida404 {
     position: absolute;
-    top: 240px; /* Posición inicial en la parte superior */
-    left: -150px; /* Posición inicial fuera de la pantalla */
-    animation: caer 20s linear infinite; /* Animación de caída */
-    width: 100px;
+    top: 170px; /* Posición inicial en la parte superior */
+    left: -30px; /* Posición inicial fuera de la pantalla */
+    animation: caer 15s linear infinite; /* Animación de caída */
+    width: 90px;
+    opacity: 0;
+    animation-delay: -5s; /* Ajustar el retraso inicial */
 }
 
 @keyframes caer {
-    0% { transform: translateX(calc(100vw + 200px)) translateY(0) scale(1); } /* Cambia de -200px a 100vw + 200px */
+    0% { 
+        transform: translateX(calc(100vw + 200px)) translateY(0) scale(1); 
+    } /* Cambia de -200px a 100vw + 200px */
+    20% { 
+        transform: translateX(calc(100vw + 100px)); 
+        opacity: 0;
+    } /* Empieza a caer en el 20% */
+    22% { 
+        transform: translateX(calc(100vw + 100px)); 
+        opacity: 1;
+    }
    
-    100% { transform: translateY(600px) scale(4.5); } /* En el suelo, cambia de 100vw + 200px a -140px */
+    100% { 
+        transform: translateY(600px) scale(8); 
+        opacity: 1;
+    } /* En el suelo, cambia de 100vw + 200px a -140px */
 }
 
 .paracaidas {
     position: absolute;
-    top: 260px; /* Posición inicial en la parte superior */
-    left: -350px; /* Posición inicial fuera de la pantalla */
+    top: 185px; /* Posición inicial en la parte superior */
+    left: -360px; /* Posición inicial fuera de la pantalla */
     width: 50px;
-    animation: caerParacaidas 20s linear infinite;
+    animation: caerParacaidas 15s linear infinite;
     opacity: 0;
+    animation-delay: -5s; /* Ajustar el retraso inicial */
 }
 
 @keyframes caerParacaidas {
@@ -49,21 +77,25 @@ body {
     20% { 
         transform: translateX(calc(100vw + 100px)); 
         opacity: 0;
-    } /* Empieza a caer en el 20% */
-    22% { 
+    } 
+    40% { 
+        transform: translateX(calc(100vw + 100px)); 
+        opacity: 0;
+    } 
+    42% { 
         transform: translateX(calc(100vw + 100px)); 
         opacity: 1;
     }
     
     100% { 
-        transform: translateY(600px) translateX(calc(50vw - 25px)) scale(5.5); 
+        transform: translateY(600px) translateX(calc(50vw - 25px)) scale(11); 
         opacity: 1;
     } /* En el suelo, cambia de 100vw + 100px a -100px */
 }
 
 .frase {
     position: absolute;
-    top: 10%; /* Centra verticalmente */
+    top: 45px; /* Centra verticalmente */
     left: 50%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
     text-align: center; /* Alinea el texto al centro */
@@ -80,3 +112,61 @@ body {
     50% { color: #00FFFF; } /* Cyan */
     100% { color: #FF69B4; } /* Rosa */
 }
+
+.nube {
+    position: absolute;
+    width: 320px;
+    height: auto;
+    opacity: 1;
+    transition: opacity 1s ease;
+    z-index: 3;
+    animation-delay: -5s; /* Ajustar el retraso inicial */
+
+}
+
+.nube1 {
+    left: 235px;
+    top: -15px;
+    animation: moverNube1 15s infinite linear;
+    z-index: 3;
+}
+
+.nube2 {
+    right: 220px;
+    top: -25px;
+    animation: moverNube2 15s infinite linear;
+}
+
+.nube3 {
+    right: 485px;
+    top: -25px;
+    animation: moverNube3 15s infinite linear;
+}
+
+@keyframes moverNube1 {
+    0% { 
+        transform: translateX(0); 
+    }
+    100% { 
+        transform: translateX(-200px); 
+    }
+}
+
+@keyframes moverNube2 {
+    0% { 
+        transform: translateX(0); 
+    }
+    100% { 
+        transform: translateX(200px); 
+    }
+}
+
+@keyframes moverNube3 {
+    0% { 
+        transform: translateY(0); 
+    }
+    100% { 
+        transform: translateY(200px); 
+    }
+}
+
