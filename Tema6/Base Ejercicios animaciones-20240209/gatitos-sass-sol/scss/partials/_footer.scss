@@ -1,0 +1,155 @@
+  /* ------------------- Colocar iconos redes sociales mediante EACH en SCSS ---------------------- */
+ footer {
+     $redes-sociales: facebook instagram linkedin red-x;
+
+     .redes-sociales{
+        display: flex;
+        justify-content: space-around;
+        padding: 1.25rem;
+        margin-top: 1.25rem;
+        border-top: 1px solid darkblue; 
+        border-bottom: 1px solid darkblue;
+     }
+
+     .redes-sociales {
+         @each $red in $redes-sociales {
+             .icono-#{$red} {
+                 background-image: url("../img/redes-sociales/#{$red}.png");
+                 width: 30px;
+                 height: 30px;
+                //  background-repeat: no-repeat;
+                 background-position: center center;   
+                 border-radius: 3px;            
+
+             }
+         }
+     }
+ }
+
+
+ /* ------------------- Estilos Generales ---------------------- */
+
+ footer {
+     & {
+         background-color: var(--color-1);
+         color: darkblue;
+         line-height: 1.5;
+         padding: 1.25rem;
+     }
+
+     ul {
+         list-style: none;
+         padding-left: 0;        
+     }
+
+     a {
+         text-decoration: none;
+         color: #7D7DC4;
+     }
+
+     a:hover {
+         text-decoration: underline;
+     }
+
+     .ft-title {
+         color: darkblue;
+         font-family: "Merriweather", serif;
+         font-size: 1.375rem;
+        
+     }
+
+     /* -----------------------Footer Principal ------------------------------------- */
+     .ft-main {
+         display: flex;
+         flex-wrap: wrap;
+     }
+
+     .ft-main-item {
+         min-width: 12.5rem;
+
+         p {
+             color: #7D7DC4;
+         }
+     }
+
+     /* ---------------------------- Subcripción ---------------------------------------*/
+     form {
+         display: flex;
+         flex-wrap: wrap;
+     }
+
+     input[type="email"] {
+         border: 0;
+         padding: 0.625rem;
+         margin-top: 0.3125rem;
+     }
+
+     input[type="submit"] {
+         background-color: #7D7DC4;
+         color: #fff;
+         cursor: pointer;
+         border: 0;
+         padding: 0.625rem 0.9375rem;
+         margin-top: 0.3125rem;
+     }
+
+     /* ----------------------- Footer Redes Sociales ------------------------------------- */
+     .ft-social {
+         padding: 0 1.875rem 1.25rem;
+     }
+
+     .ft-social-list {
+         display: flex;
+         justify-content: center;
+         border-top: 1px #777 solid;
+         padding-top: 1.25rem;
+     }
+
+     .ft-social-list li {
+         margin: 0.5rem;
+         font-size: 1.25rem;
+     }
+
+     /* ----------------------- Footer Derechos de Autor  ------------------------------------- */
+     .ft-legal {
+         padding: 0.9375rem 1.875rem;
+         background-color: var(--color-1);
+     }
+
+     .ft-legal-list {
+         width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+     }
+
+     .ft-legal-list li {
+         margin: 0.125rem 0.625rem;
+         white-space: nowrap;
+         overflow: hidden;
+     }
+
+     /*-------------- Usar para Colocar a la derecha "@2023 Ies Francisco de Goya" ---------------*/
+     .ft-legal-list li:nth-last-child(2) {
+         flex: 1;
+     }
+
+     /*------------------------------Responsivo----------------------------------------------*/
+     @media only screen and (min-width: 29.8125rem
+
+         /* 477px */
+     ) {
+         .ft-main {
+             justify-content: space-evenly;
+         }
+     }
+
+     @media only screen and (min-width: 77.5rem
+
+         /* 1240px */
+     ) {
+         .ft-main {
+             justify-content: space-evenly;
+         }
+     }
+
+ }

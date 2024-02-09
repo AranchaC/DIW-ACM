@@ -1,0 +1,56 @@
+/*
+  Animación para hacer el efecto zoom sobre una imagen
+*/
+@mixin mix-efecto-zoom($factor-zoom: 1.2, $tiempo-animacion: 5s) {
+  // display: block;
+  // overflow: hidden;
+  // position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    animation: efecto-zoom $tiempo-animacion ease-out 1;
+  }
+
+  @keyframes efecto-zoom {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    50% {
+      transform: scale($factor-zoom);
+      opacity: 0.7;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+
+@mixin mix-fondo-alerta {
+  background-color: #ffeaa7; // Color de fondo de alerta
+  padding: 15px; // Ajusta el espacio interno según sea necesario
+  border: 2px solid #fdcb6e; // Borde de la alerta
+  border-radius: 8px; // Bordes redondeados
+  display: inline-block; // Para que el fondo se ajuste al contenido
+  animation: cambiar-opacidad 2s infinite; // Animación intermitente
+}
+
+@keyframes cambiar-opacidad {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

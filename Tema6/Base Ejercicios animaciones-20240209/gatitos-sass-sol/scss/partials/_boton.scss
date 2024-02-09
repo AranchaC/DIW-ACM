@@ -1,0 +1,85 @@
+$colores-claros : (#FFE5E1,
+    #fff,
+    #484848,
+    #6E2C00,
+    #828282);
+
+
+$colores-oscuros : (#eff1f1,
+    #34495E,
+    #CCD1D1,
+    #F9E79F,
+    #fff);
+
+:root {
+    .tema-claro {
+        --color-1: #{nth($colores-claros,1)};
+        --color-2: #{nth($colores-claros,2)};
+        --color-3: #{nth($colores-claros,3)};
+        --color-4: #{nth($colores-claros,4)};
+        --color-5: #{nth($colores-claros,5)};
+    }
+
+    .tema-oscuro {
+        --color-1: #{nth($colores-oscuros,1)};
+        --color-2: #{nth($colores-oscuros,2)};
+        --color-3: #{nth($colores-oscuros,3)};
+        --color-4: #{nth($colores-oscuros,4)};
+        --color-5: #{nth($colores-oscuros,5)};
+    }
+}
+
+.menu {
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .anochecer {
+        display: inline-block;
+        width: 10%;
+    }
+
+    .boton-noche {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 30px;
+    }
+
+    .noche-selector {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: 1s;
+        border-radius: 25px;
+        background-color: var(--color-2);
+        border: 1px solid #eaeaea;
+    }
+
+    .noche-selector:before {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f0eb'; //Imagen Bombilla
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        font-size: 20px;
+        transition: 0.3s ease all;
+        color: #d0c56a;
+    }
+
+    input:checked+.noche-selector:before {
+        transform: translate(20px) rotate(360deg);
+        content: '\f186'; //Imagen luna
+        color: #d0c56a;
+    }
+
+    input:checked+.noche-selector {
+        background-color: #4e4e4e;
+        left: 0px;
+    }
+}

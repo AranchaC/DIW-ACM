@@ -1,0 +1,27 @@
+@import "partials/reset";
+@import "partials/menu-clasico";
+// @import "partials/menu-flex";
+
+@import "partials/en-construccion";
+@import "partials/intro";
+@import "partials/razones";
+@import "partials/galeria-simple";
+@import "partials/footer"; 
+@import "partials/boton"; 
+@import "partials/art-director";
+
+
+
+body {
+    color: darkblue;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 2rem; 
+  }
+
+  @media (max-width: 48rem) {
+    body {
+      padding: 1rem;
+    }   
+  }
+  

@@ -1,0 +1,32 @@
+body {
+    overflow: hidden; /* Para evitar barras de desplazamiento */
+}
+
+
+.avion {
+    position: absolute;
+    top: 100px; /* Posición inicial en la parte superior */
+    left: -200px; /* Posición inicial fuera de la pantalla */
+    width: 350px;
+    animation: volar 10s linear infinite; /* Animación de vuelo */
+    z-index: 1;
+}
+
+@keyframes volar {
+    0% { transform: translateX(calc(100vw + 350px)); } /* Cambia de -200px a 100vw + 350px */
+    100% { transform: translateX(-350px); } /* Cambia de 100vw + 200px a -200px */
+}
+
+.caida404 {
+    position: absolute;
+    top: 240px; /* Posición inicial en la parte superior */
+    left: -35px; /* Posición inicial fuera de la pantalla */
+    animation: caer 10s linear infinite; /* Animación de caída */
+    width: 200px;
+}
+
+@keyframes caer {
+    0% { transform: translateX(calc(100vw + 200px)) translateY(0); } /* Cambia de -200px a 100vw + 200px */
+    50% { transform: translateX(calc(50vw - 100px)) translateY(200px); } /* Caída */
+    100% { transform: translateX(-140px) translateY(400px); } /* En el suelo, cambia de 100vw + 200px a -140px */
+}

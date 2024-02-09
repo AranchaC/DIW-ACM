@@ -1,0 +1,87 @@
+.intro {
+  .grid {
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 2rem; 
+    grid-template-columns: repeat(12, 1fr);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 70rem;
+    width: 100%;
+  }
+
+  
+
+  .grid {
+    align-items: center;
+    background-color: var(--color-1);
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  
+
+  .titulo {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-block-end: 1rem;
+  }
+
+  .subtitulo {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+}
+
+/***********************************************************************/
+/*************************** TEXTO SOBRE UNA IMAGEN *******************/
+/*********************************************************************/
+.contenedor {
+  grid-column-end: span 6;
+  position: relative;
+  display: inline-block;
+}
+
+.imagen-gatito {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente */
+  color: white;
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 48rem) {
+
+  .intro {
+    .grid {
+      grid-gap: 2rem 0;
+    }
+
+    .grid>* {
+      grid-column-end: span 12;
+    }
+
+    .titulo {
+      font-size: 3rem;
+    }
+
+    .ver-mas {
+      grid-column-start: 1;
+    }
+  }
+}
+

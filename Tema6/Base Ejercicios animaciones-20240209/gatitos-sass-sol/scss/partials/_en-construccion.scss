@@ -1,0 +1,27 @@
+$en-construccion: false;
+@import "../components/en-construccion-animaciones";
+
+.en-construccion {
+
+  @if $en-construccion ==true {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    picture {
+      width: 50%;
+      @include mix-efecto-zoom($factor-zoom: 1.5, $tiempo-animacion: 6s);
+    }
+  }
+  @else {
+    display: none;
+  }
+  img {
+    max-width: 100%;
+  }
+  .titulo{
+    @include mix-fondo-alerta();
+  }
+}
