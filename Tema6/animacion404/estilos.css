@@ -14,10 +14,10 @@ body {
 
 .avion {
     position: absolute;
-    top: 20px; /* Posición inicial en la parte superior */
-    left: -10px; /* Posición inicial fuera de la pantalla */
+    top: 10vh; /* Posición inicial en la parte superior */
+    left: -5vw; /* Posición inicial fuera de la pantalla */
     width: 350px;
-    animation: volar 15s linear infinite; /* Animación de vuelo */
+    animation: volar 20s linear infinite; /* Animación de vuelo */
     z-index: 1;
     animation-delay: -5s; /* Ajustar el retraso inicial */
 }
@@ -33,9 +33,9 @@ body {
 
 .caida404 {
     position: absolute;
-    top: 170px; /* Posición inicial en la parte superior */
-    left: -30px; /* Posición inicial fuera de la pantalla */
-    animation: caer 15s linear infinite; /* Animación de caída */
+    top: 32vh; /* Posición inicial en la parte superior */
+    left: -12vw; /* Posición inicial fuera de la pantalla */
+    animation: caer 20s linear infinite; /* Animación de caída */
     width: 90px;
     opacity: 0;
     animation-delay: -5s; /* Ajustar el retraso inicial */
@@ -62,10 +62,10 @@ body {
 
 .paracaidas {
     position: absolute;
-    top: 185px; /* Posición inicial en la parte superior */
-    left: -360px; /* Posición inicial fuera de la pantalla */
+    top: 30vh; /* Posición inicial en la parte superior */
+    left: -35vw; /* Posición inicial fuera de la pantalla */
     width: 50px;
-    animation: caerParacaidas 15s linear infinite;
+    animation: caerParacaidas 20s linear infinite;
     opacity: 0;
     animation-delay: -5s; /* Ajustar el retraso inicial */
 }
@@ -108,9 +108,9 @@ body {
 }
 
 @keyframes cambioColor {
-    0% { color: #FF69B4; } /* Rosa */
-    50% { color: #00FFFF; } /* Cyan */
-    100% { color: #FF69B4; } /* Rosa */
+    0% { color: #FF69B4; }
+    50% { color: #00FFFF; }
+    100% { color: #9669ff; }
 }
 
 .nube {
@@ -120,27 +120,25 @@ body {
     opacity: 1;
     transition: opacity 1s ease;
     z-index: 3;
-    animation-delay: -5s; /* Ajustar el retraso inicial */
-
 }
 
 .nube1 {
-    left: 235px;
-    top: -15px;
-    animation: moverNube1 15s infinite linear;
+    left: 29vw;
+    top: -0.5vw;
+    animation: moverNube1 18s linear infinite;
     z-index: 3;
 }
 
 .nube2 {
-    right: 220px;
-    top: -25px;
-    animation: moverNube2 15s infinite linear;
+    right: 30vw;
+    top: -1vw;
+    animation: moverNube2 18s linear infinite;
 }
 
 .nube3 {
-    right: 485px;
-    top: -25px;
-    animation: moverNube3 15s infinite linear;
+    right: 41vw;
+    top: -1vw;
+    animation: moverNube3 18s linear infinite;
 }
 
 @keyframes moverNube1 {
@@ -148,7 +146,7 @@ body {
         transform: translateX(0); 
     }
     100% { 
-        transform: translateX(-200px); 
+        transform: translateX(-210px); 
     }
 }
 
@@ -157,7 +155,7 @@ body {
         transform: translateX(0); 
     }
     100% { 
-        transform: translateX(200px); 
+        transform: translateX(210px); 
     }
 }
 
@@ -166,7 +164,7 @@ body {
         transform: translateY(0); 
     }
     100% { 
-        transform: translateY(200px); 
+        transform: translateY(215px); 
     }
 }
 
