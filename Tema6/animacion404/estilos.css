@@ -95,11 +95,11 @@ body {
 
 .frase {
     position: absolute;
-    top: 45px; /* Centra verticalmente */
+    top: 4vw; /* Centra verticalmente */
     left: 50%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
     text-align: center; /* Alinea el texto al centro */
-    font-size: 24px; /* Tamaño de fuente */
+    font-size: 34px; /* Tamaño de fuente */
     font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente más graciosa */
     color: #FF69B4; /* Color del texto rosa */
     z-index: 2; /* Asegura que esté sobre las imágenes */
@@ -115,7 +115,7 @@ body {
 
 .nube {
     position: absolute;
-    width: 320px;
+    width: 380px;
     height: auto;
     opacity: 1;
     transition: opacity 1s ease;
@@ -123,22 +123,22 @@ body {
 }
 
 .nube1 {
-    left: 29vw;
-    top: -0.5vw;
-    animation: moverNube1 18s linear infinite;
+    left: 20vw;
+    top: 0.5vw;
+    animation: moverNube1 17.5s linear infinite;
     z-index: 3;
 }
 
 .nube2 {
-    right: 30vw;
-    top: -1vw;
-    animation: moverNube2 18s linear infinite;
+    right: 20vw;
+    top: 0vw;
+    animation: moverNube2 17.5s linear infinite;
 }
 
 .nube3 {
     right: 41vw;
-    top: -1vw;
-    animation: moverNube3 18s linear infinite;
+    top: 0vw;
+    animation: moverNube3 17.5s linear infinite;
 }
 
 @keyframes moverNube1 {
@@ -146,7 +146,7 @@ body {
         transform: translateX(0); 
     }
     100% { 
-        transform: translateX(-210px); 
+        transform: translateX(-280px); 
     }
 }
 
@@ -155,7 +155,7 @@ body {
         transform: translateX(0); 
     }
     100% { 
-        transform: translateX(210px); 
+        transform: translateX(280px); 
     }
 }
 
@@ -164,7 +164,7 @@ body {
         transform: translateY(0); 
     }
     100% { 
-        transform: translateY(215px); 
+        transform: translateY(285px); 
     }
 }
 
