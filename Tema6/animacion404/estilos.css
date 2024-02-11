@@ -7,8 +7,8 @@ body {
     position: relative;
     height: 100vh; /* Establecer altura total del viewport */
     background-image: url(./img/fondo1.jpg);
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el cuerpo */
-    background-position: center; /* Centra la imagen de fondo */
+    background-size: cover; 
+    background-position: center; 
 }
 
 
@@ -25,10 +25,10 @@ body {
 @keyframes volar {
     0% { 
         transform: translateX(calc(100vw + 350px)); 
-    } /* Cambia de -200px a 100vw + 350px */
+    } 
     100% { 
         transform: translateX(-100px); 
-    } /* Cambia de 100vw + 200px a -200px */
+    } 
 }
 
 .caida404 {
@@ -42,22 +42,23 @@ body {
 }
 
 @keyframes caer {
+    /* Empieza siendo transparente */
     0% { 
         transform: translateX(calc(100vw + 200px)) translateY(0) scale(1); 
-    } /* Cambia de -200px a 100vw + 200px */
+    }
     20% { 
         transform: translateX(calc(100vw + 100px)); 
         opacity: 0;
-    } /* Empieza a caer en el 20% */
+    } 
+    /* Cuando empieza a caer se hace visible */
     22% { 
         transform: translateX(calc(100vw + 100px)); 
         opacity: 1;
-    }
-   
+    }  
     100% { 
         transform: translateY(600px) scale(8); 
         opacity: 1;
-    } /* En el suelo, cambia de 100vw + 200px a -140px */
+    } 
 }
 
 .paracaidas {
@@ -71,6 +72,7 @@ body {
 }
 
 @keyframes caerParacaidas {
+    /* Empieza siendo transparente */
     0% { 
         transform: translateX(calc(100vw + 100px)) scale(1); 
     } 
@@ -82,6 +84,7 @@ body {
         transform: translateX(calc(100vw + 100px)); 
         opacity: 0;
     } 
+    /* Cuando empieza a caer se hace visible */
     42% { 
         transform: translateX(calc(100vw + 100px)); 
         opacity: 1;
@@ -90,18 +93,18 @@ body {
     100% { 
         transform: translateY(600px) translateX(calc(50vw - 25px)) scale(11); 
         opacity: 1;
-    } /* En el suelo, cambia de 100vw + 100px a -100px */
+    } 
 }
 
 .frase {
     position: absolute;
-    top: 4vw; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
+    top: 4vw; 
+    left: 50%; 
     transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
-    text-align: center; /* Alinea el texto al centro */
-    font-size: 34px; /* Tamaño de fuente */
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente más graciosa */
-    color: #FF69B4; /* Color del texto rosa */
+    text-align: center; 
+    font-size: 34px; 
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    color: #FF69B4; /* Color del texto inicial */
     z-index: 2; /* Asegura que esté sobre las imágenes */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra al texto para efecto */
     animation: cambioColor 5s infinite alternate; /* Animación de cambio de color */
