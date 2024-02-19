@@ -1,0 +1,95 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: skyblue;
+}
+
+marquee {
+  height: 90vh;
+  width: 100%;
+}
+
+.contenedorGif {
+  z-index: 100;
+  width: 10vw;
+  display: flex;
+}
+
+.contenedorGif p {
+  font-size: 9vw;
+  font-family: "Courier New", Courier, monospace;
+  animation: cambioColor 5s infinite, giroTexto 5s infinite linear;
+}
+
+@keyframes cambioColor {
+  0% {
+    color: darkred; /* Color inicial */
+  }
+  25% {
+    color: darkblue; /* Color después del 25% de la animación */
+  }
+  50% {
+    color: darkgreen; /* Color después del 50% de la animación */
+  }
+  75% {
+    color: darkorange; /* Color después del 75% de la animación */
+  }
+  100% {
+    color: darkred; /* Vuelve al color inicial al finalizar la animación */
+  }
+}
+@keyframes giroTexto {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.contenedorGif img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background-image: url("../imagenes/banner.png");
+  background-color: skyblue;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 8vh;
+}
+header p {
+  color: white;
+  font-size: 4vh;
+  font-family: "Courier New", Courier, monospace;
+  animation: resaltarTexto 5s infinite;
+}
+
+@keyframes resaltarTexto {
+  0% {
+    text-shadow: 0 0 5px navy, 0 0 10px darkblue, 0 0 15px midnightblue;
+  }
+  25% {
+    text-shadow: 0 0 5px midnightblue, 0 0 10px darkblue, 0 0 15px navy;
+  }
+  50% {
+    text-shadow: 0 0 5px darkblue, 0 0 10px midnightblue, 0 0 15px navy;
+  }
+  75% {
+    text-shadow: 0 0 5px darkblue, 0 0 10px navy, 0 0 15px midnightblue;
+  }
+  100% {
+    text-shadow: 0 0 5px midnightblue, 0 0 10px darkblue, 0 0 15px navy;
+  }
+}
+
+/*# sourceMappingURL=base.css.map */

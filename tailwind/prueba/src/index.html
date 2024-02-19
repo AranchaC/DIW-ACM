@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Bienvenido a la Página Divertida!</title>
+  <!-- Incluir tu archivo CSS de Tailwind -->
+  <link href="./css/estilos.css" rel="stylesheet">
+  <style>
+    /* Estilos adicionales si es necesario */
+  </style>
+</head>
+<body class="bg-gradient-to-b from-purple-400 to-pink-500 min-h-screen flex flex-col justify-center items-center">
+  <!-- Encabezado -->
+  <header class="text-center mb-12">
+    <h1 class="text-5xl font-bold text-white">¡Bienvenido a la Página Divertida!</h1>
+    <p class="text-lg text-gray-200 mt-4">Donde la diversión nunca termina...</p>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Sección 1: Juegos -->
+    <section class="bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold mb-4">¡Juegos!</h2>
+      <p class="text-gray-700">¿Listo para jugar? ¡Elige uno de nuestros emocionantes juegos!</p>
+      <ul class="mt-4">
+        <li class="mb-2">
+          <a href="#" class="text-blue-500 hover:underline">Juego 1: Aventura en el Espacio</a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-blue-500 hover:underline">Juego 2: Carrera de Coches</a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="text-blue-500 hover:underline">Juego 3: Rompecabezas Desafiantes</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Sección 2: Galería de Memes -->
+    <section class="bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold mb-4">¡Galería de Memes!</h2>
+      <p class="text-gray-700">¡Diviértete con nuestra colección de memes hilarantes!</p>
+      <div class="mt-4 grid grid-cols-1 gap-4">
+        <img src="meme1.jpg" alt="Meme 1" class="rounded-lg">
+        <img src="meme2.jpg" alt="Meme 2" class="rounded-lg">
+        <img src="meme3.jpg" alt="Meme 3" class="rounded-lg">
+      </div>
+    </section>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="mt-12 text-center text-gray-300">
+    <p>© 2024 Página Divertida. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

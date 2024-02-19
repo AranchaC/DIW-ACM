@@ -1,0 +1,9 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+@import "./partials/body.scss";
+@import "./partials/header.scss";

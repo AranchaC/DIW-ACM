@@ -1,0 +1,33 @@
+header {
+    background-image: url("../imagenes/banner.png");
+    background-color: skyblue;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    height: 8vh;
+    p {
+        color: white;
+        font-size: 4vh;
+        font-family: 'Courier New', Courier, monospace;
+        animation: resaltarTexto 5s infinite;
+    }
+}
+
+@keyframes resaltarTexto {
+    0% {
+        text-shadow: 0 0 5px navy, 0 0 10px darkblue, 0 0 15px midnightblue;
+    }
+    25% {
+        text-shadow: 0 0 5px midnightblue, 0 0 10px darkblue, 0 0 15px navy;
+    }
+    50% {
+        text-shadow: 0 0 5px darkblue, 0 0 10px midnightblue, 0 0 15px navy;
+    }
+    75% {
+        text-shadow: 0 0 5px darkblue, 0 0 10px navy, 0 0 15px midnightblue;
+    }
+    100% {
+        text-shadow: 0 0 5px midnightblue, 0 0 10px darkblue, 0 0 15px navy;
+    }
+}
+
