@@ -471,10 +471,10 @@ th {
   background-color: #f2f2f2;
 }
 
-#thMoneda, #tdMoneda,
-#thFlor, #tdFlor,
-#thComida, #tdComida,
-#thAnimal, #tdAnimal {
+.thMoneda, .tdMoneda,
+.thFlor, .tdFlor,
+.thComida, .tdComida,
+.thAnimal, .tdAnimal {
   display: none;
 }
 
@@ -482,8 +482,8 @@ th {
   .tabla {
     margin-bottom: 7vh;
   }
-  #thComida, #tdComida,
-  #thAnimal, #tdAnimal {
+  .thComida, .tdComida,
+  .thAnimal, .tdAnimal {
     display: table-cell;
   }
   table {
@@ -501,10 +501,10 @@ th {
   }
 }
 @media screen and (min-width: 890px) {
-  #thMoneda, #tdMoneda,
-  #thFlor, #tdFlor,
-  #thComida, #tdComida,
-  #thAnimal, #tdAnimal {
+  .thMoneda, .tdMoneda,
+  .thFlor, .tdFlor,
+  .thComida, .tdComida,
+  .thAnimal, .tdAnimal {
     display: table-cell;
   }
   table {
