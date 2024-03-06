@@ -1,0 +1,22 @@
+footer{   
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background:  #d6eaf8 ;
+    color: #21618C;
+    text-align: center;         
+    
+}
+
+$redes-sociales: facebook twitter linkedin;
+
+@each $red in $redes-sociales {
+    .redes-sociales .icono-#{$red} {
+        background-image: url("/DIW-ACM/Enunciado/Posicionamiento/img/#{$red}.png");
+        width:40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,40 @@
+//mapa
+$colores: (
+    'blanquecino': #d6eaf8,
+    'azul': #21618C
+);
+
+//Modo debug
+$debug: false;
+
+//mixin
+@mixin autor{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 21px;
+    background-color: map-get($colores, blanquecino );
+    color: map-get($colores, azul );
+}
+
+
+@if ($debug == true) {
+    p#idAutor img{     
+        width: 40px;
+    }
+} @else {
+    p#idAutor img{
+        display: none;
+    }
+
+}
+
+p#idAutor{     
+    @include autor;
+    padding: 10px ;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 750px;
+}
+
+
